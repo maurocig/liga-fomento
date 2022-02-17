@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Liga de Floresta</title>
+	<link rel="shortcut icon" href="../imagenes/favicon_io/arbol.ico" type="image/x-icon">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html">La Liga</a></li>
+			<li><a href="../obras/obras.html">Obras</a></li>
+			<li><a href="../eventos/eventos.html">Eventos</a></li>
+			<li><a href="../biblioteca/biblioteca.html">Biblioteca</a></li>
+			<li><a href="../contacto/contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<!-- Esto puede quedar repetitivo con el footer, pero la idea es diferenciar el estilo con css, en esta página iría todo más grande. -->
+	<section>
+		<h2>Contacto</h2>
+		<p>Déjanos tu mensaje</p>
+		<form action="">
+			<div>
+				<label for="nombre">Nombre</label>
+				<input type="text" name="nombre">
+				<label for="email">E-mail</label>
+				<input type="email" name="email">
+				<label for="mensaje">Su mensaje</label>
+				<textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+				<button type="submit">Enviar</button>
+			</div>
+		</form>
+	</section>
+	<section>
+		<img src="../imagenes/logo-hq.png" alt="logo">
+		<img src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
+		<img src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
+	</section>
+	<!-- Ubicación con Google maps. -->
+	<section>
+		<div class="mapouter">
+			<div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+					src="https://maps.google.com/maps?q=33%20orientales,%20Rbla.%20Dr.%20Miguel%20Perea%20esquina,%2016200%20La%20Floresta,%20Departamento%20de%20Canelones,%20Uruguay&t=&z=17&ie=UTF8&iwloc=&output=embed"
+					frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+				<style>
+					.mapouter {
+						position: relative;
+						text-align: right;
+						height: 500px;
+						width: 600px;
+					}
+				</style><a href="https://www.embedgooglemap.net">responsive google map embed</a>
+				<style>
+					.gmap_canvas {
+						overflow: hidden;
+						background: none !important;
+						height: 500px;
+						width: 600px;
+					}
+				</style>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div>
+			<section>
+				<h3>Contacto</h3>
+				<p>Déjanos tu mensaje</p>
+				<form action="">
+					<div>
+						<input type="text" name="nombre" placeholder="Nombre">
+						<input type="email" name="email" placeholder="E-mail">
+						<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Su mensaje"></textarea>
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+			</section>
+			<section>
+				<h3>Mapa del sitio</h3>
+				<ul>
+					<li>La liga</li>
+					<li>Obras</li>
+					<li>Eventos</li>
+					<li>Biblioteca</li>
+					<li>Contacto</li>
+				</ul>
+			</section>
+			<section>
+				<img src="../imagenes/logo-hq.png" alt="logo">
+				<img src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
+				<img src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
+			</section>
+		</div>
+	</footer>
+</body>
+
+</html>
