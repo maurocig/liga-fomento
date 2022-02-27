@@ -34,6 +34,7 @@ header {
 	width: 100vw;
 	height: 700px;
 	position: relative;
+	background-image: url(../imagenes/cartel.jpg);
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size: cover;
