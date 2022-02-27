@@ -14,7 +14,7 @@
 
 	<header class="main-head radial">
 		<!-- <img src="./imagenes/cartel.jpg" alt="foto portada"> -->
-		<nav class="header_nav">
+		<nav class="header_nav" id="mainNavbar">
 			<div class="header_nav--logo">
 				<img class="header_nav--logo" src="./imagenes/logo-hq.png" alt="">
 				<div class="circle"></div>
@@ -52,6 +52,28 @@
 				consequat. Duis aute irure dolor in reprehenderit in voluptate.
 				magna aliqua.
 			</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi vitae dolores cum quaerat! Obcaecati tempore
+				amet atque voluptas veritatis cum, expedita accusamus numquam consequatur quisquam non a omnis officiis?
+				Laborum illum cum perspiciatis ad corrupti fugit praesentium doloribus, assumenda eum inventore cumque! Vero,
+				ex, nobis ipsa obcaecati quisquam itaque, recusandae consequatur suscipit ducimus consectetur eveniet. Inventore
+				maiores facilis officia?
+				Ducimus aperiam necessitatibus aut exercitationem fugit ratione atque nostrum distinctio maiores est? Earum
+				officiis culpa alias similique ullam architecto! Unde molestias tempora quibusdam ratione id, inventore sequi
+				sunt doloremque recusandae!
+				Est officiis repellendus corrupti maiores, incidunt officia in hic laudantium at dignissimos quos fuga tenetur
+				nesciunt tempore, aliquid veniam, porro pariatur? Libero modi distinctio magni recusandae dolore ipsam ullam
+				harum.
+				Corporis eligendi totam, dignissimos facilis quisquam a ea, dolorum qui laborum iure rerum architecto iusto
+				fugiat? Beatae, unde modi! Amet odio eveniet tempore quam vel obcaecati rem repudiandae suscipit? Architecto.
+				Temporibus vero ratione beatae, dolore repudiandae maiores facilis expedita quaerat architecto consectetur nisi
+				unde impedit fuga aspernatur cum voluptatibus nobis, labore quibusdam laboriosam provident dolores debitis
+				libero eligendi ea? Repellendus.
+				Ullam cum incidunt ipsum doloremque, nobis numquam laudantium minus enim facilis exercitationem tempore
+				explicabo repudiandae eum dignissimos, error, similique nam aut placeat repellat! Dolorum excepturi hic
+				explicabo labore tenetur id.
+				Beatae, pariatur, commodi temporibus debitis atque architecto saepe odit neque, laborum asperiores molestiae.
+				Non, corrupti inventore? Accusantium earum sequi aliquid, dicta sed accusamus rem nulla, necessitatibus commodi
+				distinctio praesentium excepturi!</p>
 			<button class="btn">Conocer más</button>
 		</article>
 		<figure class="section2__foto">
@@ -114,6 +136,18 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		const navbar = document.querySelector('.header_nav');
+		window.onscroll = function () {
+			// pageYOffset or scrollY
+			if (window.pageYOffset > 500) {
+				navbar.classList.add('nav-colored')
+			} else {
+				navbar.classList.remove('nav-colored')
+			}
+		}
+	</script>
 
 </body>
 
