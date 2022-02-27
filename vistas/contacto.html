@@ -7,24 +7,62 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Liga de Floresta</title>
 	<link rel="shortcut icon" href="../imagenes/favicon_io/arbol.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../estilos/style.css">
 </head>
 
 <body>
-	<nav>
-		<ul>
-			<li><a href="../index.html">La Liga</a></li>
-			<li><a href="../obras/obras.html">Obras</a></li>
-			<li><a href="../eventos/eventos.html">Eventos</a></li>
-			<li><a href="../biblioteca/biblioteca.html">Biblioteca</a></li>
-			<li><a href="../contacto/contacto.html">Contacto</a></li>
-		</ul>
-	</nav>
+	<header class="main-head">
+		<nav class="header_nav">
+			<div class="header_nav--logo">
+				<img class="header_nav--logo" src="../imagenes/logo-hq.png" alt="">
+				<div class="circle"></div>
+			</div>
+			<ul class="header_nav--ul">
+				<li><a href="../index.html">La Liga</a></li>
+				<li><a href="./obras.html">Obras</a></li>
+				<li><a href="./eventos.html">Eventos</a></li>
+				<li><a href="./biblioteca.html">Biblioteca</a></li>
+				<li><a href="./contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<!-- Esto puede quedar repetitivo con el footer, pero la idea es diferenciar el estilo con css, en esta página iría todo más grande. -->
-	<section>
-		<h2>Contacto</h2>
-		<p>Déjanos tu mensaje</p>
-		<form action="">
+	<div class="wrapper__contacto">
+		<article class="section1">
+			<h2>Contacto</h2>
+			<h3>Liga de Fomento La Floresta</h3>
+			<div>
+				<img class="contact_icon" src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
+			</div>
+			<div>
+				<img class="contact_icon" src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
+			</div>
+		</article>
+		<!-- Ubicación con Google maps. -->
+		<div class="mapouter">
+			<div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas"
+					src="https://maps.google.com/maps?q=33%20orientales,%20Rbla.%20Dr.%20Miguel%20Perea%20esquina,%2016200%20La%20Floresta,%20Departamento%20de%20Canelones,%20Uruguay&t=&z=17&ie=UTF8&iwloc=&output=embed"
+					frameborder="10" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+				<style>
+					.mapouter {
+						position: relative;
+						text-align: right;
+						height: 100%;
+						width: 100%;
+					}
+				</style><a href="https://www.embedgooglemap.net">responsive google map embed</a>
+				<style>
+					.gmap_canvas {
+						overflow: hidden;
+						background: none !important;
+						height: 400px;
+						width: 100%;
+					}
+				</style>
+			</div>
+		</div>
+		<form action="" class="section__form">
+			<h2>Déjanos tu mensaje</h2>
 			<div>
 				<label for="nombre">Nombre</label>
 				<input type="text" name="nombre">
@@ -35,67 +73,43 @@
 				<button type="submit">Enviar</button>
 			</div>
 		</form>
-	</section>
-	<section>
-		<img src="../imagenes/logo-hq.png" alt="logo">
-		<img src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
-		<img src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
-	</section>
-	<!-- Ubicación con Google maps. -->
-	<section>
-		<div class="mapouter">
-			<div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
-					src="https://maps.google.com/maps?q=33%20orientales,%20Rbla.%20Dr.%20Miguel%20Perea%20esquina,%2016200%20La%20Floresta,%20Departamento%20de%20Canelones,%20Uruguay&t=&z=17&ie=UTF8&iwloc=&output=embed"
-					frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
-				<style>
-					.mapouter {
-						position: relative;
-						text-align: right;
-						height: 500px;
-						width: 600px;
-					}
-				</style><a href="https://www.embedgooglemap.net">responsive google map embed</a>
-				<style>
-					.gmap_canvas {
-						overflow: hidden;
-						background: none !important;
-						height: 500px;
-						width: 600px;
-					}
-				</style>
-			</div>
-		</div>
-	</section>
+	</div>
+	</div>
 
 	<footer>
-		<div>
-			<section>
+		<div class="footer__grid">
+			<div class="footer__column footer_form footer1">
 				<h3>Contacto</h3>
 				<p>Déjanos tu mensaje</p>
 				<form action="">
-					<div>
-						<input type="text" name="nombre" placeholder="Nombre">
-						<input type="email" name="email" placeholder="E-mail">
-						<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Su mensaje"></textarea>
-						<button type="submit">Enviar</button>
-					</div>
+					<input type="text" name="nombre" placeholder="Nombre">
+					<input type="email" name="email" placeholder="E-mail">
+					<textarea name="mensaje" id="" cols="20" rows="6" placeholder="Su mensaje"></textarea>
+					<button type="submit">Enviar</button>
 				</form>
-			</section>
-			<section>
+			</div>
+			<div class="footer__column footer2">
 				<h3>Mapa del sitio</h3>
-				<ul>
-					<li>La liga</li>
-					<li>Obras</li>
-					<li>Eventos</li>
-					<li>Biblioteca</li>
-					<li>Contacto</li>
+				<ul class="footer__column--sitemap">
+					<li><a href="../index.html">La Liga</a></li>
+					<li><a href="./obras.html">Obras</a></li>
+					<li><a href="./eventos.html">Eventos</a></li>
+					<li><a href="./biblioteca.html">Biblioteca</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
 				</ul>
-			</section>
-			<section>
-				<img src="../imagenes/logo-hq.png" alt="logo">
-				<img src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
-				<img src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
-			</section>
+			</div>
+			<div class="footer__column footer3">
+				<h3>Inf. Contacto</h3>
+				<div>
+					<img class="contact_icon" src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
+				</div>
+				<div>
+					<img class="contact_icon" src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
+				</div>
+				<div class="footer--logo">
+					<img class="footer_img--logo" src="../imagenes/logo-hq.png" alt="logo">
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>

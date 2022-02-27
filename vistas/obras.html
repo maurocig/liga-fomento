@@ -10,77 +10,89 @@
 	<link rel="stylesheet" href="../estilos/style.css">
 </head>
 
-<header>
-	<nav class="header_nav">
-		<div class="header_nav--logo">
-			<img class="header_nav--logo" src="./imagenes/logo-hq.png" alt="">
-			<div class="circle"></div>
-		</div>
-		<ul class="header_nav--ul">
-			<li><a href="index.html">La Liga</a></li>
-			<li><a href="./obras/obras.html">Obras</a></li>
-			<li><a href="./eventos/eventos.html">Eventos</a></li>
-			<li><a href="./biblioteca/biblioteca.html">Biblioteca</a></li>
-			<li><a href="./contacto/contacto.html">Contacto</a></li>
-		</ul>
-	</nav>
-</header>
-
 <body>
-	<img src="../imagenes/obra.jpeg" alt="">
-	<ul>
-		<li><a href="../index.html">La Liga</a></li>
-		<li><a href="../obras/obras.html">Obras</a></li>
-		<li><a href="../eventos/eventos.html">Eventos</a></li>
-		<li><a href="../biblioteca/biblioteca.html">Biblioteca</a></li>
-		<li><a href="../contacto/contacto.html">Contacto</a></li>
-	</ul>
+	<header class="main-h>
+		<!-- <img src=" ./imagenes/cartel.jpg" alt="foto portada"> -->
+		<nav class="header_nav">
+			<div class="header_nav--logo">
+				<img class="header_nav--logo" src="../imagenes/logo-hq.png" alt="">
+				<div class="circle"></div>
+			</div>
+			<ul class="header_nav--ul">
+				<li><a href="../index.html">La Liga</a></li>
+				<li><a href="./obras.html">Obras</a></li>
+				<li><a href="./eventos.html">Eventos</a></li>
+				<li><a href="./biblioteca.html">Biblioteca</a></li>
+				<li><a href="./contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<section>
-		<div>
+
+	<div class="wrapper">
+		<article class="section1__texto">
 			<h2>Obras</h2>
+			<!-- <h3>Sobre nosotros</h3> -->
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi aspernatur officia atque? Provident quidem,
 				voluptatem velit nesciunt id, nam dolore ipsam voluptate, consectetur beatae minus perferendis nisi aut
-				voluptatibus obcaecati!
 				Numquam fuga nostrum ullam quisquam ipsam blanditiis optio recusandae officia expedita, laborum porro fugit
-				dolore consequatur animi debitis temporibus facilis sed error, est maxime ex a? Corrupti illo tempore
-				perferendis?
 				nisi aliquam!</p>
-			<div>
-				<img src="../imagenes/obra-retro.jpg" alt="">
-			</div>
-		</div>
-	</section>
+			<button class="btn">Contáctenos</button>
+		</article>
+		<figure class="section1__foto">
+			<img src="../imagenes/obra.jpeg" alt="">
+		</figure>
+
+		<article class="section2__texto">
+			<h2>Contacto</h2>
+			<!-- <h3>Un poco de su historia</h3> -->
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate.
+				magna aliqua.
+			</p>
+			<button class="btn">Conocer más</button>
+		</article>
+		<figure class="section2__foto">
+			<img class="foto__img--historia" src="./imagenes/foto-vieja-rambla.jpeg" class="section_2--img" alt="">
+		</figure>
+	</div>
 
 	<footer>
-		<div>
-			<section>
+		<div class="footer__grid">
+			<div class="footer__column footer_form footer1">
 				<h3>Contacto</h3>
 				<p>Déjanos tu mensaje</p>
 				<form action="">
-					<div>
-						<input type="text" name="nombre" placeholder="Nombre">
-						<input type="email" name="email" placeholder="E-mail">
-						<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Su mensaje"></textarea>
-						<button type="submit">Enviar</button>
-					</div>
+					<input type="text" name="nombre" placeholder="Nombre">
+					<input type="email" name="email" placeholder="E-mail">
+					<textarea name="mensaje" id="" cols="20" rows="6" placeholder="Su mensaje"></textarea>
+					<button type="submit">Enviar</button>
 				</form>
-			</section>
-			<section>
+			</div>
+			<div class="footer__column footer2">
 				<h3>Mapa del sitio</h3>
-				<ul>
+				<ul class="footer__column--sitemap">
 					<li><a href="../index.html">La Liga</a></li>
-					<li><a href="../obras/obras.html">Obras</a></li>
-					<li><a href="../eventos/eventos.html">Eventos</a></li>
-					<li><a href="../biblioteca/biblioteca.html">Biblioteca</a></li>
-					<li><a href="../contacto/contacto.html">Contacto</a></li>
+					<li><a href="./obras.html">Obras</a></li>
+					<li><a href="./eventos.html">Eventos</a></li>
+					<li><a href="./biblioteca.html">Biblioteca</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
 				</ul>
-			</section>
-			<section>
-				<img src="../imagenes/logo-hq.png" alt="logo">
-				<img src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
-				<img src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
-			</section>
+			</div>
+			<div class="footer__column footer3">
+				<h3>Inf. Contacto</h3>
+				<div>
+					<img class="contact_icon" src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
+				</div>
+				<div>
+					<img class="contact_icon" src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
+				</div>
+				<div class="footer--logo">
+					<img class="footer_img--logo" src="../imagenes/logo-hq.png" alt="logo">
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>

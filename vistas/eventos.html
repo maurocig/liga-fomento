@@ -7,64 +7,88 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Liga de Floresta</title>
 	<link rel="shortcut icon" href="../imagenes/favicon_io/arbol.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../estilos/style.css">
 </head>
 
 <body>
-	<nav>
-		<ul>
-			<li><a href="../index.html">La Liga</a></li>
-			<li><a href="../obras/obras.html">Obras</a></li>
-			<li><a href="./eventos.html">Eventos</a></li>
-			<li><a href="../biblioteca/biblioteca.html">Biblioteca</a></li>
-			<li><a href="../contacto/contacto.html">Contacto</a></li>
-		</ul>
-	</nav>
+	<header class="main-head">
+		<nav class="header_nav">
+			<div class="header_nav--logo">
+				<img class="header_nav--logo" src="../imagenes/logo-hq.png" alt="">
+				<div class="circle"></div>
+			</div>
+			<ul class="header_nav--ul">
+				<li><a href="../index.html">La Liga</a></li>
+				<li><a href="./obras.html">Obras</a></li>
+				<li><a href="./eventos.html">Eventos</a></li>
+				<li><a href="./biblioteca.html">Biblioteca</a></li>
+				<li><a href="./contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<section>
-		<div>
-			<h2>Eventos</h2>
+	<div class="wrapper">
+		<article class="section1__texto">
+			<h2>Calendario de eventos</h2>
+			<!-- <h3>Sobre nosotros</h3> -->
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi aspernatur officia atque? Provident quidem,
 				voluptatem velit nesciunt id, nam dolore ipsam voluptate, consectetur beatae minus perferendis nisi aut
-				voluptatibus obcaecati!
 				Numquam fuga nostrum ullam quisquam ipsam blanditiis optio recusandae officia expedita, laborum porro fugit
-				dolore consequatur animi debitis temporibus facilis sed error, est maxime ex a? Corrupti illo tempore
-				perferendis?
 				nisi aliquam!</p>
-		</div>
-		<div>
-			<img src="../imagenes/noche-blanca.jpg" alt="">
-		</div>
-	</section>
+			<button class="btn">Ver todos</button>
+		</article>
+		<figure class="section1__foto">
+			<img src="../imagenes/noche-blanca.jpg" class="foto__img--fachada" alt="fachada de la biblioteca">
+		</figure>
+
+		<!-- <article class="section2__texto"> -->
+		<!-- 	<h2>Contacto</h2> -->
+		<!-- 	<div class="section2__texto--contacto"> -->
+		<!-- 		<div> -->
+		<!-- 			<img class="contact_icon" src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000 -->
+		<!-- 		</div> -->
+		<!-- 		<div> -->
+		<!-- 			<img class="contact_icon" src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com -->
+		<!-- 		</div> -->
+		<!-- 	</div> -->
+		<!-- 	<button class="btn">Facebook</button> -->
+		<!-- </article> -->
+	</div>
 
 	<footer>
-		<div>
-			<section>
+		<div class="footer__grid">
+			<div class="footer__column footer_form footer1">
 				<h3>Contacto</h3>
 				<p>Déjanos tu mensaje</p>
 				<form action="">
-					<div>
-						<input type="text" name="nombre" placeholder="Nombre">
-						<input type="email" name="email" placeholder="E-mail">
-						<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Su mensaje"></textarea>
-						<button type="submit">Enviar</button>
-					</div>
+					<input type="text" name="nombre" placeholder="Nombre">
+					<input type="email" name="email" placeholder="E-mail">
+					<textarea name="mensaje" id="" cols="20" rows="6" placeholder="Su mensaje"></textarea>
+					<button type="submit">Enviar</button>
 				</form>
-			</section>
-			<section>
+			</div>
+			<div class="footer__column footer2">
 				<h3>Mapa del sitio</h3>
-				<ul>
-					<li>La liga</li>
-					<li>Obras</li>
-					<li>Eventos</li>
-					<li>Biblioteca</li>
-					<li>Contacto</li>
+				<ul class="footer__column--sitemap">
+					<li><a href="../index.html">La Liga</a></li>
+					<li><a href="./obras.html">Obras</a></li>
+					<li><a href="./eventos.html">Eventos</a></li>
+					<li><a href="./biblioteca.html">Biblioteca</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
 				</ul>
-			</section>
-			<section>
-				<img src="../imagenes/logo-hq.png" alt="logo">
-				<img src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
-				<img src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
-			</section>
+			</div>
+			<div class="footer__column footer3">
+				<h3>Inf. Contacto</h3>
+				<div>
+					<img class="contact_icon" src="../imagenes/iconos/phone-solid.svg" alt="Telefono: ">(08) 400 2000
+				</div>
+				<div>
+					<img class="contact_icon" src="../imagenes/iconos/envelope-solid.svg" alt="E-mail: "> email@address.com
+				</div>
+				<div class="footer--logo">
+					<img class="footer_img--logo" src="../imagenes/logo-hq.png" alt="logo">
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
