@@ -1,0 +1,15 @@
+header {
+  /* background-color: seagreen; */
+  background-color: #353535;
+  margin-top: 0;
+  width: 100vw;
+  height: 667px;
+  position: relative;
+  /* background-image: url(../imagenes/cartel.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  box-shadow: inset 0px 0px 15px 10px #3030307a; }
