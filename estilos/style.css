@@ -6,7 +6,7 @@
 	overflow-x: hidden;
 	/* box-sizing: border-box; */
 }
-
+ 
 html {
 	width: 100vw;
 	background-color: rgb(0, 0, 0);
@@ -23,7 +23,6 @@ body {
 	color:rgb(124, 124, 124);
 	/* overflow-x: hidden; */
 }
-
 
 /* ///////// HEADER ///////// */
 header {
@@ -249,6 +248,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: start;
 }
 
 .btn {
@@ -330,11 +330,12 @@ footer {
 	align-content: center;
 }
 .footer__grid > * {
-	min-width: 400px;
+	/* min-width: 400px; */
 }
 
 .footer1 {
 	grid-area: footer1;
+	display: none;
 }
 .footer2 {
 	grid-area: footer2;
@@ -344,7 +345,6 @@ footer {
 }
 .footer1 form {
 	margin-top: 10px;
-	display: block;
 }
 .footer1 form > *{
 	display: block;
@@ -385,7 +385,7 @@ footer {
 
 @media (min-width: 500px) {
 .carousel-caption {
-	top: 50%;
+	/* top: 50%; */
 	transform: translateY(-50%);
 	text-align: start;
 		}
@@ -393,7 +393,6 @@ footer {
 
 @media (min-width: 830px) {
 	.wrapper {
-		/* width: 100%; */
 		margin: 0 auto;
 		margin-top: 80px;
 		margin-bottom: 80px;
@@ -402,8 +401,7 @@ footer {
 		row-gap: 80px;
 		grid-template-areas: 
 			"foto1  texto1 texto1"
-			"texto2 texto2 foto2"
-			/* "footer footer footer" */
+			"texto2 texto2 foto2";
 	}
 	.section__banner {
 		width: 100%;
@@ -430,6 +428,9 @@ footer {
 	.footer__grid > * {
 		min-width: 200px;
 		/* max-width: 250px; */
+	}
+	.footer1 {
+		display: block;
 	}
 	.footer2 {
 		text-align: center;
@@ -486,6 +487,10 @@ footer {
 }
 
 /* //// CONTACTO //// */
+.header2 {
+	height: 400px;
+}
+
 .section2__texto--contacto div img {
 	color: black;
 	/* filter: invert(99%) sepia(93%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(00%); */
@@ -500,39 +505,35 @@ align-content: center;
 .section__form * {
 	display: block;
 }
-.section1__texto {
-	/* grid-area: info */
-}
 .mapouter {
 	grid-area: map;
 	align-self: start;
 }
 .wrapper__contacto {
-	display: grid;
-	grid-template-columns: 1fr;
-	/* align-items: center; */
+	/* display: grid; */
+	/* grid-template-columns: 1fr; */
 	max-width: 100%;
-	justify-content: start;
-	justify-items: start;
-	gap: 40px;
+	/* justify-content: start; */
+	/* justify-items: start; */
+	/* gap: 40px; */
 	margin: 40px 10vw 40px 10vw;
 	/* padding: 40px, 5vw, 40px, 5vw; */
-	grid-template-areas:
-		"info"
-		"map"
-		"form"
+	/* grid-template-areas: */
+		/* "info" */
+		/* "map" */
+		/* "form" */
 }
 
 @media screen and (min-width: 768px) {
 	.wrapper__contacto {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: 
-			"map 			info"
-			"form 		form";
+		/* grid-template-columns: 1fr 1fr; */
+		/* grid-template-areas:  */
+			/* "map 			info" */
+			/* "form 		form"; */
 
 		max-width: 100%;
 		margin: 0 10vw 0 10vw;
-		gap: 20px;
+		/* gap: 20px; */
 	}
 }
 

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header>
+	<header class="header2">
 		<img class="header__img" src="../imagenes/sobre.jpg" alt="foto portada">
 		<nav class="header_nav">
 			<div class="nav__logo">
@@ -30,8 +30,8 @@
 		</nav>
 	</header>
 
-	<div class="wrapper__contacto">
-		<article class="section1">
+	<div class="row wrapper__contacto mt-5">
+		<article class="section1 col-lg-4 col-md-6 col-12 order-1 order-lg-2 mb-5">
 			<h2>Contacto</h2>
 			<h3>Liga de Fomento La Floresta</h3>
 			<div>
@@ -42,29 +42,33 @@
 			</div>
 		</article>
 		<!-- Ubicación con Google maps. -->
-		<div class="mapouter">
+		<div class="mapouter col-xl-4 col-lg-6 col-12 order-2 order-lg-1 mb-5">
 			<div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas"
 					src="https://maps.google.com/maps?q=33%20orientales,%20Rbla.%20Dr.%20Miguel%20Perea%20esquina,%2016200%20La%20Floresta,%20Departamento%20de%20Canelones,%20Uruguay&t=&z=17&ie=UTF8&iwloc=&output=embed"
 					frameborder="10" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
 				<style>
 					.mapouter {
-						position: relative;
+						/* position: relative; */
 						text-align: right;
 						height: 100%;
-						width: 100%;
+						/* width: 100%; */
+						display: flex;
+						justify-content: center;
 					}
 				</style><a href="https://www.embedgooglemap.net">responsive google map embed</a>
 				<style>
 					.gmap_canvas {
 						overflow: hidden;
 						background: none !important;
-						height: 400px;
-						width: 100%;
+						/* height: 400px; */
+						/* width: 100%; */
+						justify-content: start;
 					}
 				</style>
 			</div>
 		</div>
-		<form action="" class="section__form">
+		<!-- Formulario de contacto -->
+		<form action="" class="section__form col-xl-4 col-lg-6 col-12 order-3 mb-5">
 			<h2>Déjanos tu mensaje</h2>
 			<div>
 				<label class="form-label" for="nombre">Nombre</label>
