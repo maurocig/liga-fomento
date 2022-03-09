@@ -1,3 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	/* box-sizing: border-box; */
+}
+
+html {
+	width: 100vw;
+	background-color: rgb(0, 0, 0);
+	/* overflow-x: unset; */
+}
+
+body {
+	background-color: rgb(250, 250, 250);
+	font-family: "Open Sans", sans-serif;
+	justify-content: center;
+	display: block;
+	margin: 0;
+	/* justify-items: center; */
+	color: rgb(124, 124, 124);
+	/* overflow-x: hidden; */
+}
 
 header {
 	/* background-color: seagreen; */
@@ -8,10 +31,123 @@ header {
 	position: relative;
 	/* background-image: url(../imagenes/cartel.jpg); */
 	background-repeat: no-repeat;
-	background-position:center;
+	background-position: center;
 	background-size: cover;
 	width: 100vw;
 	justify-content: center;
 	display: flex;
 	box-shadow: inset 0px 0px 15px 10px #3030307a;
+
+	#header__carousel {
+		.carousel-item {
+			height: 100%;
+			img {
+				object-fit: cover;
+				height: 100%;
+				opacity: 80%;
+				/* Prevenir elementos borroneados si queda posicionado en medio pixel: */
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+			}
+			.carousel-caption {
+				top: 70%;
+				transform: translateY(-30%);
+				bottom: initial;
+				text-align: center;
+				left: 10%;
+				p {
+					color: white;
+				}
+				h5 {
+					font-size: 30px;
+				}
+			}
+		}
+		.carousel-control-prev,
+		.carousel-control-next {
+			width: 9%;
+		}
+	}
+
+	nav.header__nav {
+		padding: 20px 0 0px 0;
+		/* height: 100px; */
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		position: fixed;
+		padding-left: 10%;
+		padding-right: 10%;
+		background-image: linear-gradient(rgba(243, 242, 242, 0.938) 0%, rgba(255, 255, 255, 0) 100%);
+		/* overflow: visible; */
+		.header__nav--ul {
+			margin-top: 20px;
+			/* max-width: fit-content; */
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin: 20px 20px 0 20px;
+			box-shadow: 1px 3px 7px 2px #3030307a;
+			/* padding: 10px 0 10px 0; */
+			background-color: white;
+			flex-wrap: wrap;
+			padding: 0;
+			li {
+				display: flex;
+				align-items: left;
+				word-wrap: unset;
+				overflow: visible;
+				/* margin: 1px 0 1px 0; */
+				background-color: white;
+				:hover {
+					color: white;
+					background-color: rgb(83, 83, 83);
+				}
+				a {
+					text-decoration: none;
+					font-weight: 500;
+
+					// usar unquote() porque sass no permite mezclar px y vw.
+					font-size: unquote("clamp(16px, 1.5vw, 18px)");
+					padding: 10px unquote("max(2.1vw, 20px)") 10px unquote("max(2.1vw, 20px)");
+
+					color: rgb(53, 53, 53);
+					:hover {
+						color: white;
+					}
+					.activo {
+						color: white;
+						background-color: rgb(83, 83, 83);
+					}
+				}
+			}
+		}
+		.nav__logo {
+			.circle {
+				height: 120px;
+				width: 120px;
+				border-radius: 100px;
+				position: fixed;
+				top: 20px;
+				box-shadow: 1px 3px 8px 3px #3030307a;
+			}
+		}
+		img {
+			width: 120px;
+			height: 120px;
+			.nav__logo--img {
+				width: 100%;
+				max-width: 120px;
+			}
+		}
+	}
+	.nav-colored {
+		background-color: rgba(255, 255, 255, 0.982);
+		background-image: none;
+		transition: 400ms;
+		box-shadow: 2px 1px 5px 2px #3030307a;
+	}
 }

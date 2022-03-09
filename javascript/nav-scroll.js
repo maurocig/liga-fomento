@@ -1,4 +1,4 @@
-const navbar = document.querySelector('.header_nav');
+const navbar = document.querySelector('.header__nav');
 window.onscroll = function () {
 	// pageYOffset or scrollY
 	if (window.pageYOffset > 200) {
