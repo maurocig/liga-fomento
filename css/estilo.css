@@ -100,11 +100,13 @@ header {
     background-image: none;
     transition: 400ms;
     box-shadow: 2px 1px 5px 2px #3030307a; }
-    header .nav-colored .circle,
+    header .nav-colored #circulo {
+      width: 70px;
+      height: 70px; }
+    header .nav-colored #circulo,
     header .nav-colored .header__nav--ul {
       box-shadow: 2px 2px 5px 2px #46464673;
       padding-bottom: 0px; }
-    header .nav-colored .circle,
     header .nav-colored .nav__logo,
     header .nav-colored .nav__logo--img {
       width: 70px;
@@ -130,10 +132,10 @@ header {
   header .nav-colored {
     max-height: 110px;
     padding-top: 0; }
-    header .nav-colored .circle {
+    header .nav-colored #circulo {
       align-self: center;
       top: 15px; }
-    header .nav-colored .circle,
+    header .nav-colored #circulo,
     header .nav-colored .nav__logo,
     header .nav-colored .nav__logo--img {
       /* height: 70px; */
