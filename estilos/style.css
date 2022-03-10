@@ -175,11 +175,6 @@ footer {
 }
 
 @media (min-width: 500px) {
-	.carousel-caption {
-		/* top: 50%; */
-		transform: translateY(-50%);
-		text-align: start;
-	}
 }
 
 @media (min-width: 830px) {
@@ -218,23 +213,17 @@ footer {
 		/* padding: 5px 30vw 5px 30vw; */
 	}
 	.nav-colored .circle {
-		align-self: center;
-		top: 15px;
 	}
 	.header__nav--ul {
-		margin: 0;
 	}
 	.nav-colored .circle,
 	.nav-colored .nav__logo,
 	.nav-colored .nav__logo--img {
 		/* height: 70px; */
-		width: 80px;
-		height: 80px;
 	}
 	.nav-colored .header__nav--ul,
 	.nav-colored .header__nav--ul li a {
 		/* padding: 5px 10px 5px 10px; */
-		font-size: clamp(16px, 1.5vw, 18px);
 	}
 }
 
