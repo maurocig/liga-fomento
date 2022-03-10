@@ -14,29 +14,31 @@ header {
   justify-content: center;
   display: flex;
   box-shadow: inset 0px 0px 15px 10px #3030307a; }
-  header #header__carousel .carousel-item {
-    height: 100%; }
-    header #header__carousel .carousel-item img {
-      object-fit: cover;
-      height: 100%;
-      opacity: 80%;
-      /* Prevenir elementos borroneados si queda posicionado en medio pixel: */
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      transform-style: preserve-3d; }
-    header #header__carousel .carousel-item .carousel-caption {
-      top: 70%;
-      transform: translateY(-30%);
-      bottom: initial;
-      text-align: center;
-      left: 10%; }
-      header #header__carousel .carousel-item .carousel-caption p {
-        color: white; }
-      header #header__carousel .carousel-item .carousel-caption h5 {
-        font-size: 30px; }
-  header #header__carousel .carousel-control-prev,
-  header #header__carousel .carousel-control-next {
-    width: 9%; }
+  header #header__carousel {
+    z-index: 0; }
+    header #header__carousel .carousel-item {
+      height: 100%; }
+      header #header__carousel .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        opacity: 80%;
+        /* Prevenir elementos borroneados si queda posicionado en medio pixel: */
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d; }
+      header #header__carousel .carousel-item .carousel-caption {
+        top: 70%;
+        transform: translateY(-30%);
+        bottom: initial;
+        text-align: center;
+        left: 10%; }
+        header #header__carousel .carousel-item .carousel-caption p {
+          color: white; }
+        header #header__carousel .carousel-item .carousel-caption h5 {
+          font-size: 30px; }
+    header #header__carousel .carousel-control-prev,
+    header #header__carousel .carousel-control-next {
+      width: 9%; }
   header .header__nav {
     padding: 20px 0 0px 0;
     /* height: 100px; */
@@ -45,9 +47,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    position: fixed;
+    justify-content: space-evenly;
     padding-left: 10%;
     padding-right: 10%;
+    position: fixed;
     background-image: linear-gradient(rgba(243, 242, 242, 0.938) 0%, rgba(255, 255, 255, 0) 100%);
     /* overflow: visible; */ }
     header .header__nav .header__nav--ul {
