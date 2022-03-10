@@ -80,9 +80,9 @@ header {
           color: #353535; }
           header .header__nav .header__nav--ul li a :hover {
             color: white; }
-          header .header__nav .header__nav--ul li a .activo {
-            color: white;
-            background-color: #535353; }
+      header .header__nav .header__nav--ul .activo {
+        color: white;
+        background-color: #535353; }
     header .header__nav .nav__logo {
       width: 120px;
       height: 120px; }
