@@ -48,29 +48,22 @@
 /* hasta acá llegué */
 .nav-colored .circle,
 .header__nav--ul {
-	box-shadow: 2px 2px 5px 2px #46464673;
-	padding-bottom: 0px;
 }
 .nav-colored .circle,
 .nav-colored .nav__logo,
 .nav-colored .nav__logo--img {
 	/* height: 70px; */
-	width: 70px;
-	height: 70px;
 }
 
 .nav-colored .header__nav--ul {
-	margin-top: 9px;
-	margin-bottom: 0px;
-	box-shadow: none;
 }
 
 .nav-colored .header__nav--ul,
 .nav-colored .header__nav--ul li a {
 	/* padding: 5px 10px 5px 10px; */
-	font-size: 14px;
 }
 
+/* esto creo que no va más... */
 .header__nav--logo {
 	max-width: 120px;
 	display: inline-block;
@@ -81,92 +74,43 @@
 /* /////// MAIN /////// */
 
 p {
-	font-size: clamp(16px, 1.4vw, 21px);
-	color: rgb(50, 50, 50);
 }
 
 h2 {
-	font-size: clamp(26px, 3.5vw, 32px);
-	color: black;
-	font-weight: 700;
 }
 
 h3 {
-	font-size: clamp(20px, 1.8vw, 26px);
-	padding-bottom: 7px;
-	font-weight: 500;
 }
 
 /* //// GRID //// */
 .main-head {
 	grid-area: header;
 }
-.section1__texto {
-	grid-area: texto1;
-}
-.section1__foto {
-	grid-area: foto1;
-}
-.section2__texto {
-	grid-area: texto2;
-}
-.section2__foto {
-	grid-area: foto2;
-}
-.section__banner {
-	grid-area: banner;
-}
 
 .wrapper {
-	margin: 60px 10vw 60px 10vw;
-	display: grid;
-	gap: 40px;
-	grid-template-areas:
-		/* "header" */
-		"texto1"
-		"foto1"
-		"texto2"
-		"foto2";
 }
 
 .section1__texto,
 .section2__texto {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
 }
 
 .btn {
 	/* margin-top: 20px; */
-	width: 120px;
-	height: 40px;
 }
 
 .section1__foto {
-	display: flex;
 }
 
 .section2__foto {
-	display: flex;
 }
 
 .section1__foto,
 .section2__foto {
-	box-shadow: 0px 2px 7px 2px #46464657;
-	overflow: hidden;
 }
 
 .foto__img--fachada,
 .foto__img--historia,
 .foto__img--bibFachada {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.foto__img--historia {
-	/* width: 80%; */
 }
 
 .section1__texto,
@@ -182,89 +126,43 @@ h3 {
 }
 
 .section__banner {
-	padding-bottom: 80px;
-	padding-top: 80px;
-	text-align: center;
-	background-color: rgb(225, 225, 225);
-	box-shadow: inset 1px 1px 10px 1px #4646462c;
 }
 
 .section__banner--logos {
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-evenly;
-	margin-top: 30px;
-	height: 100px;
-	display: flex;
-	align-items: center;
 }
 
 .section__banner--logos div img {
-	width: 90px;
 }
 
 /* ///////// FOOTER ///////// */
 footer {
-	background-color: rgb(83, 83, 83);
-	/* box-shadow: inset 1px 3px 7px 2px #3030307a; */
-	display: flex;
-	justify-content: center;
 }
 .footer__grid {
-	display: grid;
-	align-items: baseline;
-	align-content: center;
-	color: rgb(230, 230, 230);
-	padding: 50px 15vw 50px 15vw;
-	min-height: 320px;
-	grid-template-areas:
-		"footer1"
-		"footer2"
-		"footer3";
-	gap: 40px;
-	justify-items: start;
-	align-content: center;
 }
 .footer__grid > * {
 	/* min-width: 400px; */
 }
 
 .footer1 {
-	grid-area: footer1;
-	display: none;
 }
 .footer2 {
-	grid-area: footer2;
 }
 .footer3 {
-	grid-area: footer3;
 }
 .footer1 form {
-	margin-top: 10px;
 }
 .footer1 form > * {
-	display: block;
 }
 
-.footer_img--logo {
-	max-width: 80px;
-	display: block;
-	/* margin: auto; */
-	margin-top: 35px;
-	margin-bottom: 20px;
-	align-self: end;
+.footer__img--logo {
 }
 .contact_icon {
-	max-width: 25px;
-	padding-right: 10px;
-	filter: invert(99%) sepia(93%) saturate(579%) hue-rotate(191deg) brightness(114%) contrast(80%);
 }
 
 .footer__column {
 	/* width: 23vw; */
 }
 .footer__column ul {
-	list-style: none;
 }
 .footer__column div {
 	/* margin-top: 7px; */
@@ -272,11 +170,8 @@ footer {
 	/* align-items: center; */
 }
 .footer__column p {
-	color: rgb(200, 200, 200);
 }
 .footer__column--sitemap li a {
-	text-decoration: none;
-	color: rgb(230, 230, 230);
 }
 
 @media (min-width: 500px) {
@@ -289,78 +184,37 @@ footer {
 
 @media (min-width: 830px) {
 	.wrapper {
-		margin: 0 auto;
-		margin-top: 80px;
-		margin-bottom: 80px;
-		grid-template-columns: 1fr 1fr 1fr;
-		padding: 20px 10vw 20px 10vw;
-		row-gap: 80px;
-		grid-template-areas:
-			"foto1  texto1 texto1"
-			"texto2 texto2 foto2";
 	}
 	.section__banner {
-		width: 100%;
 	}
 
 	footer {
-		display: flex;
-		align-content: center;
-		justify-content: center;
-		padding: 50px 10vw 50px 10vw;
 	}
 	.footer__grid {
-		justify-items: start;
-		padding-top: 60px;
-		padding: 0;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas: "footer1 footer2 footer3";
-		max-width: 1200px;
-		width: 100%;
-		overflow-x: visible;
 	}
 	.footer__grid > * {
-		min-width: 200px;
 		/* max-width: 250px; */
 	}
 	.footer1 {
-		display: block;
 	}
 	.footer2 {
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		width: 100%;
 	}
 	.footer3 {
-		width: 100%;
-		text-align: end;
 	}
 	.footer--logo {
 		/* display: flex; */
-		display: flex;
-		justify-content: end;
 	}
 	.footer__img--logo {
 		align-self: end;
 	}
+
 	.header__nav {
-		margin-top: 0px;
-		height: 140px;
-		width: 100vw;
-		flex-direction: row;
-		justify-content: space-between;
 		/* padding-left: 30vw; */
 		/* padding-right: 30vw; */
 	}
 	.circle {
-		position: float;
 	}
 	.nav-colored {
-		max-height: 110px;
-		padding-top: 0;
 		/* padding: 5px 30vw 5px 30vw; */
 	}
 	.nav-colored .circle {
