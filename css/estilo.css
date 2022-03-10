@@ -37,7 +37,7 @@ header {
   header #header__carousel .carousel-control-prev,
   header #header__carousel .carousel-control-next {
     width: 9%; }
-  header nav.header__nav {
+  header .header__nav {
     padding: 20px 0 0px 0;
     /* height: 100px; */
     width: 100vw;
@@ -50,52 +50,51 @@ header {
     padding-right: 10%;
     background-image: linear-gradient(rgba(243, 242, 242, 0.938) 0%, rgba(255, 255, 255, 0) 100%);
     /* overflow: visible; */ }
-    header nav.header__nav .header__nav--ul {
+    header .header__nav .header__nav--ul {
       margin-top: 20px;
-      /* max-width: fit-content; */
+      margin-top: 20px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin: 20px 20px 0 20px;
       box-shadow: 1px 3px 7px 2px #3030307a;
-      /* padding: 10px 0 10px 0; */
+      box-shadow: 1px 3px 7px 2px #3030307a;
       background-color: white;
       flex-wrap: wrap;
       padding: 0; }
-      header nav.header__nav .header__nav--ul li {
+      header .header__nav .header__nav--ul li {
         display: flex;
         align-items: left;
         word-wrap: unset;
         overflow: visible;
-        /* margin: 1px 0 1px 0; */
+        overflow: visible;
         background-color: white; }
-        header nav.header__nav .header__nav--ul li :hover {
+        header .header__nav .header__nav--ul li :hover {
           color: white;
           background-color: #535353; }
-        header nav.header__nav .header__nav--ul li a {
+        header .header__nav .header__nav--ul li a {
           text-decoration: none;
           font-weight: 500;
           font-size: clamp(16px, 1.5vw, 18px);
           padding: 10px max(2.1vw, 20px) 10px max(2.1vw, 20px);
           color: #353535; }
-          header nav.header__nav .header__nav--ul li a :hover {
+          header .header__nav .header__nav--ul li a :hover {
             color: white; }
-          header nav.header__nav .header__nav--ul li a .activo {
+          header .header__nav .header__nav--ul li a .activo {
             color: white;
             background-color: #535353; }
-    header nav.header__nav .nav__logo .circle {
-      height: 120px;
-      width: 120px;
-      border-radius: 100px;
-      position: fixed;
-      top: 20px;
-      box-shadow: 1px 3px 8px 3px #3030307a; }
-    header nav.header__nav img {
+    header .header__nav .nav__logo {
       width: 120px;
       height: 120px; }
-      header nav.header__nav img .nav__logo--img {
-        width: 100%;
-        max-width: 120px; }
+      header .header__nav .nav__logo .nav__logo--img {
+        width: 100%; }
+      header .header__nav .nav__logo .circle {
+        height: 120px;
+        width: 120px;
+        border-radius: 100px;
+        position: fixed;
+        top: 20px;
+        box-shadow: 1px 3px 8px 3px #3030307a; }
   header .nav-colored {
     background-color: rgba(255, 255, 255, 0.982);
     background-image: none;
@@ -116,12 +115,6 @@ header {
       box-shadow: none; }
       header .nav-colored .header__nav--ul li a {
         font-size: 14px; }
-
-@media (min-width: 500px) {
-  .carousel-caption {
-    /* top: 50%; */
-    transform: translateY(-50%);
-    text-align: start; } }
 
 @media (min-width: 830px) {
   header .header__nav {
@@ -145,11 +138,7 @@ header {
     header .nav-colored .nav__logo--img {
       /* height: 70px; */
       width: 80px;
-      height: 80px; }
-    header .nav-colored .header__nav--ul,
-    header .nav-colored .header__nav--ul li a {
-      /* padding: 5px 10px 5px 10px; */
-      font-size: clamp(16px, 1.5vw, 18px); } }
+      height: 80px; } }
 
 footer {
   background-color: #535353;
