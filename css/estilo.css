@@ -169,8 +169,8 @@ header {
       width: 80px;
       height: 80px;
       margin-top: 0px; }
-    header .nav-colored .header__nav--ul {
-      font-size: 18px; } }
+    header .nav-colored .header__nav--ul li a {
+      font-size: clamp(16px, 1.5vw, 18px); } }
 
 .header2 {
   height: 400px; }
@@ -277,6 +277,39 @@ footer {
           display: flex;
           justify-content: end; } }
 
+.header--obras #header__img--obras {
+  object-fit: stretch;
+  object-position: center; }
+
+.wrapper--obras {
+  margin: 50px 10vw 50px 10vw;
+  max-width: 1500px;
+  height: 300px;
+  display: flex; }
+  .wrapper--obras .section1__foto img {
+    object-fit: cover;
+    height: 100%; }
+
+.section2__fotos--obras {
+  margin: 0 10vw 0 10vw;
+  max-width: 1500px; }
+  .section2__fotos--obras .fotos__grid--obras {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr;
+    grid-template-areas: "1 2 3";
+    gap: 10px; }
+    .section2__fotos--obras .fotos__grid--obras #foto1 {
+      grid-area: "1"; }
+    .section2__fotos--obras .fotos__grid--obras #foto2 {
+      grid-area: "2";
+      width: 100%; }
+    .section2__fotos--obras .fotos__grid--obras #foto3 {
+      grid-area: "3"; }
+    .section2__fotos--obras .fotos__grid--obras img {
+      height: 100%;
+      object-fit: cover; }
+
 .wrapper__contacto {
   width: 100%;
   padding: 40px 10vw 40px 10vw;
@@ -288,7 +321,7 @@ footer {
   .wrapper__contacto .contacto__mapa {
     grid-area: mapa;
     height: 100%;
-    min-height: 500px; }
+    min-height: 400px; }
   .wrapper__contacto .contacto__form {
     grid-area: form;
     width: 100%; }

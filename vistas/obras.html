@@ -13,25 +13,31 @@
 </head>
 
 <body>
-	<header class="header2">
-		<img class="header__img" src="../imagenes/obra.jpeg" alt="">
-		<nav class="header_nav">
-			<div class="nav__logo">
-				<img class="nav__logo--img" src="../imagenes/logo-hq.png" alt="">
-				<div class="circle"></div>
+	<header class="header2 header--obras">
+		<img id="header__img--obras" src="../imagenes/obra.jpeg" alt="">
+		<!-- // NAV -->
+		<nav class="header__nav">
+			<div class="nav-inner">
+				<div class="nav__logo">
+					<img class="nav__logo--img" src="../imagenes/logo-hq.png" alt="">
+					<div id="circulo" class="circle"></div>
+				</div>
+				<ul class="header__nav--ul">
+					<li><a href="../index.html">La Liga</a></li>
+					<li><a class="activo" href="./obras.html">Obras</a></li>
+					<li><a href="./eventos.html">Eventos</a></li>
+					<li><a href="./biblioteca.html">Biblioteca</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+				</ul>
 			</div>
-			<ul class="header_nav--ul">
-				<li><a href="../index.html">La Liga</a></li>
-				<li><a class="activo" href="./obras.html"><span class="activo">Obras</span></a></li>
-				<li><a href="./eventos.html">Eventos</a></li>
-				<li><a href="./biblioteca.html">Biblioteca</a></li>
-				<li><a href="./contacto.html">Contacto</a></li>
-			</ul>
 		</nav>
 	</header>
 
-	<div class="wrapper">
-		<article class="section1__texto">
+	<div class="row wrapper--obras">
+		<figure class="section1__foto col-md-4">
+			<img class="figure__img img-fluid" src="../imagenes/obras/obra-retro.jpg" alt="">
+		</figure>
+		<article class="section1__texto col-md-8">
 			<h2>Obras</h2>
 			<!-- <h3>Sobre nosotros</h3> -->
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi aspernatur officia atque? Provident quidem,
@@ -40,17 +46,17 @@
 				nisi aliquam!</p>
 			<button class="btn btn-success">Ver más</button>
 		</article>
-		<figure class="section1__foto">
-			<img class="figure__img" src="../imagenes/obras/obra-retro.jpg" alt="">
-		</figure>
+	</div>
+	<div class="section2__fotos--obras">
+		<h2 class="mb-4">Todas las obras</h2>
+		<div class="fotos__grid--obras">
+			<img class="img-fluid" id="foto1" src="../imagenes/obras/reparacion-gaviotas.jpg" alt="">
+			<img class="img-fluid" id="foto2" src="../imagenes/obras/pintada-pergola-2.jpg" alt="">
+			<img class="img-fluid" id="foto3" src="../imagenes/obras/obra-retro.jpg" alt="">
+		</div>
 	</div>
 
 	<!-- <div class="container margen"> -->
-	<div class="margin gap-1 d-flex justify-content-between flex-row">
-		<img src="../imagenes/obras/reparacion-gaviotas.jpg" alt="" class="img-fluid">
-		<img src="../imagenes/obras/reparacion-pergola.jpg" alt="" class="img-fluid">
-		<img src="../imagenes/obras/obra-retro.jpg" alt="" class="img-fluid">
-	</div>
 	<!-- </div> -->
 
 	<footer>
