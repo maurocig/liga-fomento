@@ -78,6 +78,8 @@ header {
         header .header__nav .header__nav--ul li a {
           text-decoration: none;
           font-weight: 500;
+          display: flex;
+          align-items: center;
           font-size: clamp(16px, 1.5vw, 18px);
           padding: 10px max(2.1vw, 20px) 10px max(2.1vw, 20px);
           color: #353535; }
@@ -125,7 +127,10 @@ header {
 
 @media (min-width: 830px) {
   header .carousel-caption {
-    justify-content: start; }
+    text-align: start;
+    display: flex;
+    align-items: start;
+    flex-direction: column; }
   header .header__nav {
     margin-top: 0px;
     height: 170px;
@@ -288,7 +293,9 @@ footer {
     grid-area: form;
     width: 100%; }
     .wrapper__contacto .contacto__form .form-label {
-      margin: 0 0 10px 0; }
+      margin: 0 0 0 0; }
+    .wrapper__contacto .contacto__form .form-control {
+      margin-bottom: 15px; }
   .wrapper__contacto .contact_icon {
     max-width: 25px;
     padding-right: 10px;
