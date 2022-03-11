@@ -62,7 +62,9 @@ header {
       box-shadow: 1px 3px 7px 2px #3030307a;
       box-shadow: 1px 3px 7px 2px #3030307a;
       background-color: white;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0 10vw 0 10vw; }
       header .header__nav .header__nav--ul li {
         display: flex;
         align-items: left;
@@ -86,7 +88,8 @@ header {
         background-color: #535353; }
     header .header__nav .nav__logo {
       width: 120px;
-      height: 120px; }
+      height: 120px;
+      margin-bottom: 30px; }
       header .header__nav .nav__logo .nav__logo--img {
         width: 100%; }
       header .header__nav .nav__logo .circle {
@@ -111,29 +114,34 @@ header {
     header .nav-colored .nav__logo,
     header .nav-colored .nav__logo--img {
       width: 70px;
-      height: 70px; }
+      height: 70px;
+      margin-bottom: 0; }
     header .nav-colored .header__nav--ul {
       margin-top: 9px;
       margin-bottom: 0px;
       box-shadow: none; }
       header .nav-colored .header__nav--ul li a {
-        font-size: 14px; }
+        font-size: 13px; }
 
 @media (min-width: 830px) {
   header .carousel-caption {
     justify-content: start; }
   header .header__nav {
     margin-top: 0px;
-    height: 140px;
+    height: 170px;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px 10vw 0 10vw; }
+    padding: 50px 10vw 0 10vw; }
     header .header__nav .header__nav--ul {
       margin: 0; }
     header .header__nav .circle {
-      position: float; }
+      position: float;
+      margin-top: 23px;
+      height: 30px; }
+    header .header__nav .nav__logo {
+      margin-top: 15px; }
     header .header__nav .nav-inner {
       display: flex;
       flex-direction: row;
@@ -153,9 +161,11 @@ header {
     header .nav-colored #circulo,
     header .nav-colored .nav__logo,
     header .nav-colored .nav__logo--img {
-      /* height: 70px; */
       width: 80px;
-      height: 80px; } }
+      height: 80px;
+      margin-top: 0px; }
+    header .nav-colored .header__nav--ul {
+      font-size: 18px; } }
 
 .header2 {
   height: 400px; }
@@ -277,6 +287,8 @@ footer {
   .wrapper__contacto .contacto__form {
     grid-area: form;
     width: 100%; }
+    .wrapper__contacto .contacto__form .form-label {
+      margin: 0 0 10px 0; }
   .wrapper__contacto .contact_icon {
     max-width: 25px;
     padding-right: 10px;
