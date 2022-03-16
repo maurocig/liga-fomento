@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Open+Sans:wght@400;500;700&display=swap");
 header {
   /* background-color: seagreen; */
@@ -310,6 +311,11 @@ footer {
       height: 100%;
       object-fit: cover; }
 
+.contact_icon {
+  max-width: 25px;
+  padding-right: 10px;
+  color: black; }
+
 .wrapper__contacto {
   width: 100%;
   padding: 40px 10vw 40px 10vw;
@@ -329,10 +335,11 @@ footer {
       margin: 0 0 0 0; }
     .wrapper__contacto .contacto__form .form-control {
       margin-bottom: 15px; }
-  .wrapper__contacto .contact_icon {
-    max-width: 25px;
-    padding-right: 10px;
-    color: black; }
+
+.contact_icon {
+  max-width: 25px;
+  padding-right: 10px;
+  color: black; }
 
 @media (min-width: 800px) {
   .wrapper__contacto {
@@ -367,10 +374,12 @@ body {
     font-size: clamp(16px, 1.4vw, 21px);
     color: #323232; }
   body h2 {
+    font-family: "Roboto", sans-serif;
     font-size: clamp(26px, 3.5vw, 32px);
     color: black;
     font-weight: 700; }
   body h3 {
+    font-family: "Roboto", sans-serif;
     font-size: clamp(20px, 1.8vw, 26px);
     padding-bottom: 7px;
     font-weight: 500; }
