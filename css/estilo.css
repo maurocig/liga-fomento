@@ -349,6 +349,18 @@ footer {
   .wrapper__contacto {
     grid-template-areas: "form mapa info"; } }
 
+.btn--verde {
+  background-color: #00784c;
+  color: white; }
+
+.btn--gris {
+  background-color: #6d6d6d;
+  color: white; }
+
+.btn--verde-claro {
+  background-color: #7eb650;
+  color: white; }
+
 * {
   margin: 0;
   padding: 0;
@@ -383,6 +395,20 @@ body {
     font-size: clamp(20px, 1.8vw, 26px);
     padding-bottom: 7px;
     font-weight: 500; }
+  body .boton, body .boton--primario, body .boton--secundario {
+    width: 150px;
+    height: 37px;
+    border: none;
+    box-shadow: 0px 1px 3px 1px #46464657;
+    margin: 8px 3px 8px 3px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 2px; }
+  body .boton--primario {
+    background-color: #00784c;
+    color: white; }
+  body .boton--secundario {
+    color: white;
+    background-color: #6d6d6d; }
   body .wrapper {
     margin: 60px 10vw 60px 10vw;
     display: grid;

@@ -1,5 +1,22 @@
 @import "fonts", "header", "header2", "fuentes", "footer", "obras", "biblioteca", "contacto";
 
+$colores: (
+	verde: #00784c,
+	gris: rgb(109, 109, 109),
+	verde-claro: #7eb650,
+);
+
+@each $color, $hex in $colores {
+	.btn--#{$color} {
+		background-color: $hex;
+		color: white;
+	}
+}
+
+$color-primario: #00784c;
+$color-secundario: rgb(109, 109, 109);
+$sombra: 0px 1px 3px 1px #46464657;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -42,6 +59,28 @@ body {
 		font-size: clamp(20px, 1.8vw, 26px);
 		padding-bottom: 7px;
 		font-weight: 500;
+	}
+
+	.boton {
+		width: 150px;
+		height: 37px;
+		border: none;
+		box-shadow: $sombra;
+		margin: 8px 3px 8px 3px;
+		font-family: $roboto;
+		border-radius: 2px;
+
+		// text-transform: uppercase;
+	}
+	.boton--primario {
+		@extend .boton;
+		background-color: $color-primario;
+		color: white;
+	}
+	.boton--secundario {
+		@extend .boton;
+		color: white;
+		background-color: $color-secundario;
 	}
 
 	.wrapper {
