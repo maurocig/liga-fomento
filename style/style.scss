@@ -13,6 +13,16 @@ $colores: (
 	}
 }
 
+@mixin color-botones($color-letra, $color-fondo) {
+	color: $color-letra;
+	background-color: $color-fondo;
+}
+
+@mixin sizes($width, $height) {
+	width: $width;
+	height: $height;
+}
+
 $color-primario: #00784c;
 $color-secundario: rgb(109, 109, 109);
 $sombra: 0px 1px 3px 1px #46464657;
@@ -69,17 +79,25 @@ body {
 		margin: 8px 3px 8px 3px;
 		font-family: $roboto;
 		border-radius: 2px;
-
-		// text-transform: uppercase;
+		color: white;
+		:active {
+			@include color-botones(black, white);
+			// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
+		}
+		:hover {
+			cursor: none;
+		}
 	}
 	.boton--primario {
 		@extend .boton;
 		background-color: $color-primario;
-		color: white;
+		:active {
+			@include color-botones(black, white);
+			// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
+		}
 	}
 	.boton--secundario {
 		@extend .boton;
-		color: white;
 		background-color: $color-secundario;
 	}
 

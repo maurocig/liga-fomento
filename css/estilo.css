@@ -402,12 +402,19 @@ body {
     box-shadow: 0px 1px 3px 1px #46464657;
     margin: 8px 3px 8px 3px;
     font-family: "Roboto", sans-serif;
-    border-radius: 2px; }
-  body .boton--primario {
-    background-color: #00784c;
+    border-radius: 2px;
     color: white; }
+    body .boton :active, body .boton--primario :active, body .boton--secundario :active {
+      color: black;
+      background-color: white; }
+    body .boton :hover, body .boton--primario :hover, body .boton--secundario :hover {
+      cursor: none; }
+  body .boton--primario {
+    background-color: #00784c; }
+    body .boton--primario :active {
+      color: black;
+      background-color: white; }
   body .boton--secundario {
-    color: white;
     background-color: #6d6d6d; }
   body .wrapper {
     margin: 60px 10vw 60px 10vw;
