@@ -184,7 +184,7 @@ header {
   z-index: 9999; }
   .header2 img {
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     width: 100%; }
 
 footer {
@@ -264,6 +264,7 @@ footer {
       padding: 0;
       margin: 0 10vw 0 10vw;
       padding: 50px 0 50px 0;
+      max-width: 1500px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: "footer1 footer2 footer3";
@@ -471,13 +472,19 @@ body {
         height: 100%;
         object-fit: cover; }
   body #galeria {
-    padding: 0px 10vw 0px 10vw;
+    margin: 0px 10vw 0px 10vw;
     margin-bottom: 120px;
-    width: 100%;
+    width: 80vw;
     height: 60vw;
     overflow-y: hidden;
     max-height: 80vh;
-    z-index: 1; }
+    z-index: 1;
+    max-width: 1500px; }
+    body #galeria .carousel-innner {
+      width: 90%;
+      box-shadow: 0px 1px 3px 1px #46464657; }
+      body #galeria .carousel-innner .carousel-item img {
+        box-shadow: 0px 1px 3px 1px #46464657; }
   body .section__banner {
     width: 100vw;
     padding-bottom: 80px;
