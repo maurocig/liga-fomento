@@ -286,38 +286,68 @@ footer {
           display: flex;
           justify-content: end; } }
 
+body {
+  display: block; }
+
 .header--obras #header__img--obras {
   object-fit: stretch;
   object-position: center; }
 
 .wrapper--obras {
-  margin: 50px 10vw 50px 10vw;
+  margin: 0 10vw 60px 10vw;
   max-width: 1500px;
-  height: 300px;
-  display: flex; }
-  .wrapper--obras .section1__foto img {
-    object-fit: cover;
-    height: 100%; }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px; }
+  .wrapper--obras .section1__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0; }
+  .wrapper--obras .section1__foto {
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+    .wrapper--obras .section1__foto img {
+      object-fit: cover;
+      height: 100%;
+      padding: 0; }
 
 .section2__fotos--obras {
   margin: 0 10vw 0 10vw;
   max-width: 1500px; }
   .section2__fotos--obras .fotos__grid--obras {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 0.7fr 0.7fr;
-    grid-template-areas: "1 2 3";
-    gap: 10px; }
-    .section2__fotos--obras .fotos__grid--obras #foto1 {
-      grid-area: "1"; }
-    .section2__fotos--obras .fotos__grid--obras #foto2 {
-      grid-area: "2";
-      width: 100%; }
-    .section2__fotos--obras .fotos__grid--obras #foto3 {
-      grid-area: "3"; }
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 200px, 200px;
+    gap: 20px;
+    margin-bottom: 60px; }
     .section2__fotos--obras .fotos__grid--obras img {
-      height: 100%;
-      object-fit: cover; }
+      width: 100%;
+      overflow-y: hidden;
+      object-fit: cover;
+      max-height: 400px; }
+
+@media (min-width: 800px) {
+  .wrapper--obras {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    gap: 20px;
+    margin-top: 60px; }
+  .section2__fotos--obras .fotos__grid--obras {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr; }
+    .section2__fotos--obras .fotos__grid--obras img {
+      height: 20vw;
+      min-height: 250px; } }
+
+@media (min-width: 1100px) {
+  .section2__fotos--obras .fotos__grid--obras {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr; }
+    .section2__fotos--obras .fotos__grid--obras img {
+      height: 20vw;
+      min-height: 250px; } }
 
 .contact_icon {
   max-width: 25px;
