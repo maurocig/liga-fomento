@@ -29,15 +29,18 @@
 				<div class="carousel-item active">
 					<img src="./imagenes/cartel.jpg" class="d-block w-100" alt="...">
 					<div class="carousel-caption">
-						<h5>First slide label</h5>
-						<p>Some representative placeholder content for the first slide.</p>
+						<h5>Sitio oficial de la Liga</h5>
+						<p>Les damos la bienvenida al sitio oficial de la Liga de Fomento de La Floresta.</p>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<img src="./imagenes/obras/reparacion-gaviotas.jpg" class="d-block w-100" alt="...">
 					<div class="carousel-caption">
-						<h5>Second slide label</h5>
-						<p>Some representative placeholder content for the second slide.</p>
+						<h5>Obras</h5>
+						<p>Listado de obras gestionadas por la Liga.</p>
+						<form action="./vistas/obras.html">
+							<button class="boton btn--verde">Ver obras</button>
+						</form>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -81,10 +84,11 @@
 		<article class="section1__texto">
 			<h2>La Liga</h2>
 			<h3>Sobre nosotros</h3>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi aspernatur officia atque? Provident quidem,
-				voluptatem velit nesciunt id, nam dolore ipsam voluptate, consectetur beatae minus perferendis nisi aut
-				Numquam fuga nostrum ullam quisquam ipsam blanditiis optio recusandae officia expedita, laborum porro fugit
-				nisi aliquam!</p>
+			<p>La Liga de Fomento de La Floresta es una institución de carácter civil, integrada por personas cuyo principal
+				interés es el progreso del Balneario "La Floresta". Tenemos como objetivos fomentar el turismo, urbanismo y la
+				cultura moral, cultural y física del balneario, así como la gestión de instalaciones y servicios públicos de
+				cualquier
+				naturaleza.</p>
 			<button class="boton btn--verde">Contáctenos</button>
 		</article>
 		<figure class="section1__foto">
@@ -96,16 +100,56 @@
 			<h2>La Floresta</h2>
 			<h3>Un poco de su historia</h3>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate.
-				magna aliqua.
-			</p>
-			<button class="boton btn--gris">Ver más</button>
+				La Floresta es el balneario más antiguo de la Costa de Oro, cuyos orígenes se remontan a 1909. Fue en ese
+				entonces cuando el doctor Miguel Perea, abogado fundador de algunas instituciones de crédito, comenzó una
+				actividad forestadora, plantando pinos y eucaliptuos, en una amplia franja de arenales comprendida entre los
+				arroyos Solís Chico y Sarandí. </p>
 		</article>
 		<figure class="section2__foto">
-			<img class="foto__img--historia" src="./imagenes/foto-vieja-rambla.jpeg" class="section_2--img" alt="">
+			<img class="foto__img--historia" src="./imagenes/foto-historia.jpg" class="section_2--img" alt="">
 		</figure>
+
+		<!-- Sección 3 -->
+		<article class="section3__texto d-flex justify-content-center flex-column">
+			<!-- <h3>Sobre nosotros</h3> -->
+			<p>En 1911 se constituye la sociedad anónima de arboricultura, balneario y fomento
+				territorial, llamada La Floresta, y se procede al loteo del balneario, dando llegada a los primeros visitantes.
+				En 1915 se inagura el Hotel La Floresta, que hoy constituye el edificio más alto y más emblemático de la zona,
+				en el cual funcionaba un casino y un cine. En 1969 el balneario es declarado Ciudad.
+			</p>
+			<form action="https://www.casaseneleste.com/blog/origenes-del-balneario.html">
+				<button class="boton btn--gris">Ver más</button>
+			</form>
+		</article>
+		<figure class="section3__foto">
+			<img class="foto__img--fachada" src="./imagenes/foto-vieja-rambla-2.jpg" alt="">
+		</figure>
+	</div>
+
+	<!-- Galería -->
+	<div id="galeria" class="carousel slide" data-bs-ride="carousel2">
+		<h2>Galería</h2>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="./imagenes/pergola.jpg" class="w-100" alt="...">
+			</div>
+			<!--
+			<div class="carousel-item">
+				<img src="..." class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="..." class="d-block w-100" alt="...">
+			</div>
+-->
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
 	</div>
 
 	<!-- Banner -->
