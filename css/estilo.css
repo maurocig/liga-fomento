@@ -61,6 +61,7 @@ header {
       align-items: center;
       padding-right: 7px; }
     header .header__nav .header__nav--ul {
+      overflow-y: hidden;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -382,7 +383,7 @@ body {
 
 @media (min-width: 800px) {
   .wrapper__contacto {
-    grid-template-areas: "mapa info" "form nada"; } }
+    grid-template-areas: "mapa form" "info nada"; } }
 
 @media (min-width: 1200px) {
   .wrapper__contacto {
