@@ -45,6 +45,7 @@ header {
     header #header__carousel .carousel-control-next {
       width: 9%; }
   header .header__nav {
+    overflow-y: hidden;
     padding: 20px 0 0px 0;
     width: 100vw;
     display: flex;
