@@ -205,11 +205,12 @@ footer {
     min-height: 320px;
     min-width: 320px;
     grid-column: 1fr;
-    grid-template-areas: "footer1" "footer2" "footer3";
+    grid-template-areas: "footer2" "footer3" "footer1";
     gap: 40px;
     justify-items: start;
     justify-content: center;
-    align-content: center; }
+    align-content: center;
+    overflow-x: visible; }
     footer .footer__grid .footer1 {
       grid-area: footer1;
       display: none; }
