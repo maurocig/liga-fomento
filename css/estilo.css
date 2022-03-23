@@ -408,6 +408,14 @@ body {
     object-position: top left;
     width: 100%; }
 
+.section2__texto .section2__texto--contacto div {
+  width: 300px; }
+  .section2__texto .section2__texto--contacto div a {
+    text-decoration: none;
+    color: gray; }
+  .section2__texto .section2__texto--contacto div a:hover {
+    text-decoration: underline; }
+
 .contact_icon {
   max-width: 25px;
   padding-right: 10px;
@@ -424,7 +432,8 @@ body {
   .wrapper__contacto .contacto__mapa {
     grid-area: mapa;
     height: 100%;
-    min-height: 400px; }
+    min-height: 400px;
+    overflow-y: hidden; }
   .wrapper__contacto .contacto__form {
     grid-area: form;
     width: 100%; }
