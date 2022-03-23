@@ -351,6 +351,7 @@ body {
         body .section2__fotos--obras .fotos__grid--obras .thumbnail .thumbnail__caption, body .section2__fotos--eventos .fotos__grid--obras .thumbnail .thumbnail__caption, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos .thumbnail .thumbnail__caption, body .section2__fotos--eventos .fotos__grid--eventos .thumbnail .thumbnail__caption {
           width: 100%;
           height: 100%;
+          flex-direction: column;
           position: absolute;
           text-align: center;
           align-items: center;
