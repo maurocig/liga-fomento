@@ -429,7 +429,9 @@ body {
   gap: 30px; }
   .wrapper__contacto .contacto__info {
     grid-area: info;
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
   .wrapper__contacto .contacto__mapa {
     grid-area: mapa;
     height: 100%;
@@ -437,6 +439,8 @@ body {
     overflow-y: hidden; }
   .wrapper__contacto .contacto__form {
     grid-area: form;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%; }
     .wrapper__contacto .contacto__form .form-label {
