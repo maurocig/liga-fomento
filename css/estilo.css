@@ -437,6 +437,9 @@ body {
     grid-area: mapa;
     min-height: 400px;
     overflow-y: hidden; }
+    .wrapper__contacto .contacto__mapa iframe {
+      height: 90%;
+      min-height: 350px; }
   .wrapper__contacto .contacto__form {
     overflow: visible;
     grid-area: form;
