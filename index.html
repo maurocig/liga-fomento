@@ -127,13 +127,14 @@
 	</div>
 
 	<!-- Galería -->
-	<div id="galeria" class="carousel slide" data-bs-ride="carousel2">
-		<h2>Galería</h2>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="./imagenes/pergola.jpg" class="w-100" alt="...">
-			</div>
-			<!--
+	<div id="galeria">
+		<h2 class="text-start w-100">Galería</h2>
+		<div id="galeria__carousel" class="carousel slide" data-bs-ride="carousel2">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./imagenes/pergola.jpg" class="w-100" alt="...">
+				</div>
+				<!--
 			<div class="carousel-item">
 				<img src="..." class="d-block w-100" alt="...">
 			</div>
@@ -141,15 +142,16 @@
 				<img src="..." class="d-block w-100" alt="...">
 			</div>
 -->
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
 	</div>
 
 	<!-- Banner -->

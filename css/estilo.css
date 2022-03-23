@@ -296,7 +296,7 @@ body {
     object-fit: stretch;
     object-position: center; }
   body .wrapper--obras {
-    margin: 60px 10vw 60px 8vw;
+    margin: 60px 10vw 60px 10vw;
     max-width: 1500px;
     display: grid;
     grid-template-columns: 1fr;
@@ -401,18 +401,11 @@ body {
   margin: 0;
   padding: 0; }
 
-.section2__fotos--eventos {
-  width: 30%;
-  margin: 0 10vw 60px 10vw; }
-  .section2__fotos--eventos .fotos__grid--eventos {
-    grid-template-rows: auto; }
-    .section2__fotos--eventos .fotos__grid--eventos .thumbnail {
-      min-width: 100%;
-      min-height: 800px; }
-      .section2__fotos--eventos .fotos__grid--eventos .thumbnail img {
-        object-position: top left;
-        width: 100%;
-        height: 100%; }
+.section2__fotos--eventos .fotos__grid--eventos .thumbnail {
+  min-height: 600px; }
+  .section2__fotos--eventos .fotos__grid--eventos .thumbnail img {
+    object-position: top left;
+    width: 100%; }
 
 .contact_icon {
   max-width: 25px;
@@ -544,6 +537,9 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: start; }
+      body .wrapper .section1__texto p,
+      body .wrapper .section2__texto p {
+        margin: 0; }
     body .wrapper .btn {
       width: 120px;
       height: 40px; }
@@ -553,7 +549,8 @@ body {
       display: flex;
       box-shadow: 0px 2px 5px 2px #46464657;
       overflow: hidden;
-      margin: 6px; }
+      margin: 6px;
+      border-radius: 3px; }
       body .wrapper .section1__foto .foto__img--fachada,
       body .wrapper .section1__foto .foto__img--historia,
       body .wrapper .section1__foto .foto__img--bibFachada,
@@ -573,13 +570,14 @@ body {
     height: 60vw;
     overflow-y: hidden;
     max-height: 80vh;
-    z-index: 1;
     max-width: 1500px; }
-    body #galeria .carousel-innner {
-      width: 90%;
-      box-shadow: 0px 1px 3px 1px #46464657; }
-      body #galeria .carousel-innner .carousel-item img {
+    body #galeria #galeria__carousel {
+      border-radius: 3px; }
+      body #galeria #galeria__carousel .carousel-innner {
+        width: 90%;
         box-shadow: 0px 1px 3px 1px #46464657; }
+        body #galeria #galeria__carousel .carousel-innner .carousel-item img {
+          box-shadow: 0px 1px 3px 1px #46464657; }
   body .section__banner {
     width: 100vw;
     padding-bottom: 80px;

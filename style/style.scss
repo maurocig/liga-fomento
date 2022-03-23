@@ -142,6 +142,9 @@ body {
 			flex-direction: column;
 			justify-content: center;
 			align-items: start;
+			p {
+				margin: 0;
+			}
 		}
 		.btn {
 			width: 120px;
@@ -154,6 +157,7 @@ body {
 			box-shadow: 0px 2px 5px 2px #46464657;
 			overflow: hidden;
 			margin: 6px;
+			border-radius: 3px;
 			.foto__img--fachada,
 			.foto__img--historia,
 			.foto__img--bibFachada {
@@ -170,14 +174,16 @@ body {
 		height: 60vw;
 		overflow-y: hidden;
 		max-height: 80vh;
-		z-index: 1;
 		max-width: 1500px;
-		.carousel-innner {
-			width: 90%;
-			box-shadow: $sombra;
-			.carousel-item {
-				img {
-					box-shadow: $sombra;
+		#galeria__carousel {
+			border-radius: 3px;
+			.carousel-innner {
+				width: 90%;
+				box-shadow: $sombra;
+				.carousel-item {
+					img {
+						box-shadow: $sombra;
+					}
 				}
 			}
 		}
