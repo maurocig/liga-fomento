@@ -409,13 +409,17 @@ body {
     object-position: top left;
     width: 100%; }
 
-.section2__texto .section2__texto--contacto div {
-  width: 300px; }
-  .section2__texto .section2__texto--contacto div a {
-    text-decoration: none;
-    color: gray; }
-  .section2__texto .section2__texto--contacto div a:hover {
-    text-decoration: underline; }
+.section2__biblioteca {
+  width: 80vw; }
+  .section2__biblioteca .section2__texto--contacto {
+    width: 100%; }
+    .section2__biblioteca .section2__texto--contacto div {
+      width: 100%; }
+      .section2__biblioteca .section2__texto--contacto div a {
+        text-decoration: none;
+        color: gray; }
+      .section2__biblioteca .section2__texto--contacto div a:hover {
+        text-decoration: underline; }
 
 .contact_icon {
   max-width: 25px;
@@ -434,6 +438,9 @@ body {
     display: flex;
     flex-direction: column;
     overflow: visible; }
+    .wrapper__contacto .contacto__info a {
+      text-decoration: none;
+      color: gray; }
   .wrapper__contacto .contacto__mapa {
     grid-area: mapa;
     min-height: 400px;
@@ -525,18 +532,23 @@ body {
     font-family: "Roboto";
     border-radius: 2px;
     color: white; }
-    body .boton :active, body .boton--primario :active, body .boton--secundario :active {
-      color: black;
-      background-color: white; }
-    body .boton :hover, body .boton--primario :hover, body .boton--secundario :hover {
-      cursor: none; }
+  body .boton:active, body .boton--primario:active, body .boton--secundario:active {
+    color: black;
+    background-color: white; }
   body .boton--primario {
     background-color: #00784c; }
-    body .boton--primario :active {
-      color: black;
-      background-color: white; }
+  body .boton--primario:hover {
+    background-color: #009c63; }
+  body .boton--primario:active {
+    color: black;
+    background-color: white; }
   body .boton--secundario {
     background-color: #6d6d6d; }
+  body .boton--secundario:hover {
+    background-color: #929292; }
+  body .boton--secundario:active {
+    color: black;
+    background-color: white; }
   body .wrapper {
     margin: 60px 10vw 60px 10vw;
     display: grid;
@@ -546,7 +558,7 @@ body {
       grid-area: texto1; }
     body .wrapper .section1__foto {
       grid-area: foto1; }
-    body .wrapper .section2__texto {
+    body .wrapper .section2__texto, body .wrapper .section2__biblioteca {
       grid-area: texto2; }
     body .wrapper .section2__foto {
       grid-area: foto2; }
@@ -556,14 +568,14 @@ body {
       grid-area: foto3; }
     body .wrapper .section__banner {
       grid-area: banner; }
-    body .wrapper .section1__texto,
-    body .wrapper .section2__texto {
+    body .wrapper .section1__texto, body .wrapper .section2__texto, body .wrapper .section2__biblioteca {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: start; }
       body .wrapper .section1__texto p,
-      body .wrapper .section2__texto p {
+      body .wrapper .section2__texto p,
+      body .wrapper .section2__biblioteca p {
         margin: 0; }
     body .wrapper .btn {
       width: 120px;

@@ -27,6 +27,8 @@ $color-primario: #00784c;
 $color-secundario: rgb(109, 109, 109);
 $sombra: 0px 1px 3px 1px #46464657;
 $sombra2: 2px 2px 3px 5px #46464657;
+$verdeHover: #009c63;
+$grisHover: rgb(146, 146, 146);
 
 * {
 	margin: 0;
@@ -81,25 +83,32 @@ body {
 		font-family: $roboto;
 		border-radius: 2px;
 		color: white;
-		:active {
-			@include color-botones(black, white);
-			// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
-		}
-		:hover {
-			cursor: none;
-		}
+	}
+	.boton:active {
+		@include color-botones(black, white);
+		// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
 	}
 	.boton--primario {
 		@extend .boton;
 		background-color: $color-primario;
-		:active {
-			@include color-botones(black, white);
-			// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
-		}
+	}
+	.boton--primario:hover {
+		background-color: $verdeHover;
+	}
+	.boton--primario:active {
+		@include color-botones(black, white);
+		// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
 	}
 	.boton--secundario {
 		@extend .boton;
 		background-color: $color-secundario;
+	}
+	.boton--secundario:hover {
+		background-color: $grisHover;
+	}
+	.boton--secundario:active {
+		@include color-botones(black, white);
+		// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
 	}
 
 	.wrapper {
