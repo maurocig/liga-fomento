@@ -466,6 +466,10 @@ body {
   .wrapper__contacto {
     grid-template-areas: "form mapa info"; } }
 
+.wrapper__gracias {
+  margin: 60px 10vw 60px 10vw;
+  width: 80vw; }
+
 .btn--verde {
   background-color: #00784c;
   color: white; }
