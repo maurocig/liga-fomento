@@ -369,7 +369,8 @@ body {
       body .section2__fotos--obras .fotos__grid--obras :hover .thumbnail__caption, body .section2__fotos--eventos .fotos__grid--obras :hover .thumbnail__caption, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos :hover .thumbnail__caption, body .section2__fotos--eventos .fotos__grid--eventos :hover .thumbnail__caption {
         display: flex; }
       body .section2__fotos--obras .fotos__grid--obras :hover img, body .section2__fotos--eventos .fotos__grid--obras :hover img, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos :hover img, body .section2__fotos--eventos .fotos__grid--eventos :hover img {
-        opacity: 50%; }
+        opacity: 50%;
+        scale: 1.2; }
   @media (min-width: 800px) {
     body .section1__texto {
       margin-bottom: 0;
