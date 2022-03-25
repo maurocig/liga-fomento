@@ -27,7 +27,7 @@
 			</div>
 			<div class="carousel-inner h-100">
 				<div class="carousel-item active">
-					<img src="./imagenes/galeria/pescado-escultura-cielo.jpg" class="d-block w-100" alt="...">
+					<img src="./imagenes/galeria/atardecer-playa.jpg" class="d-block w-100" alt="...">
 					<div class="carousel-caption">
 						<h5>Sitio oficial de la Liga</h5>
 						<p>Les damos la bienvenida al sitio oficial de la Liga de Fomento de La Floresta.</p>
@@ -48,7 +48,7 @@
 						alt="...">
 					<div class="carousel-caption">
 						<h5>Eventos</h5>
-						<p>Calendario de actividades realizadas por la Liga.</p>
+						<p>Calendario de actividades</p>
 						<form action="./vistas/eventos.html">
 							<button class="boton--primario">Ir a Eventos</button>
 						</form>
@@ -138,26 +138,41 @@
 		<div id="galeria__carousel" class="carousel slide" data-bs-ride="carousel2">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="./imagenes/pergola.jpg" class="w-100" alt="...">
+					<img src="imagenes/galeria/rambla-aerea.jpg" class="img-fluid" alt="...">
 				</div>
-				<!--
-			<div class="carousel-item">
-				<img src="..." class="d-block w-100" alt="...">
+				<div class="carousel-item">
+					<img src="imagenes/galeria/bajada-playa.jpg" class="img-fluid" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/galeria/rosa-vientos.jpg" class="img-fluid" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/galeria/playa-barrancos.jpg" class="img-fluid" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/galeria/pescado-escultura-cielo.jpg" class="img-fluid" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/galeria/pergola-atardecer.jpg" class="img-fluid" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/galeria/pescador-atardecer.jpg" class="img-fluid" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/galeria/hotel-floresta.jpg" class="img-fluid" alt="...">
+				</div>
 			</div>
-			<div class="carousel-item">
-				<img src="..." class="d-block w-100" alt="...">
-			</div>
--->
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+			<button class="carousel-control-prev" type="button" data-bs-target="#galeria__carousel" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
 			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+			<button class="carousel-control-next" type="button" data-bs-target="#galeria__carousel" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
+		<p class="mt-2"><i>Ph: <a href="https://www.instagram.com/ferrarod04/" target="_blank">Daniel
+					Ferraro</a></i></p>
 	</div>
 
 	<!-- Banner -->
@@ -184,12 +199,13 @@
 			<div class="footer__column footer_form footer1">
 				<h3>Contacto</h3>
 				<p>Déjanos tu mensaje</p>
-				<form action="">
+				<form action="https://formsubmit.co/mcigliuti01@gmail.com" method="POST">
 					<input class="form-control mb-2" type="text" name="nombre" placeholder="Nombre">
 					<input class="form-control mb-2" type="email" name="email" placeholder="E-mail">
 					<textarea class="form-control mb-2" name="mensaje" id="" cols="20" rows="6"
 						placeholder="Su mensaje"></textarea>
 					<button class="btn btn-success" type="submit">Enviar</button>
+					<input type="hidden" name="_next" value="https://ligadefloresta.netlify.app/vistas/gracias.html">
 				</form>
 			</div>
 			<div class="footer__column footer2">

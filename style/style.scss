@@ -180,18 +180,25 @@ body {
 		margin: 0px 10vw 0px 10vw;
 		margin-bottom: 120px;
 		width: 80vw;
-		height: 60vw;
 		overflow-y: hidden;
-		max-height: 80vh;
 		max-width: 1500px;
 		#galeria__carousel {
 			border-radius: 3px;
-			.carousel-innner {
-				width: 90%;
+			overflow: hidden;
+			@include sizes(100%, 50vw);
+			max-height: 80vh;
+			.carousel-inner {
+				overflow: hidden;
+				height: 100%;
 				box-shadow: $sombra;
 				.carousel-item {
+					overflow: hidden;
+					height: 100%;
 					img {
-						box-shadow: $sombra;
+						object-position: center;
+						overflow: hidden;
+						object-fit: cover;
+						@include sizes(100%, 100%);
 					}
 				}
 			}
