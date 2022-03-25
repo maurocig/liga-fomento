@@ -429,6 +429,10 @@ body {
   padding-right: 10px;
   color: black; }
 
+@media (min-width: 800px) {
+  .section2__biblioteca {
+    width: 100%; } }
+
 .wrapper__contacto {
   width: 100%;
   padding: 40px 10vw 40px 10vw;
