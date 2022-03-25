@@ -28,6 +28,8 @@ header {
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         transform-style: preserve-3d; }
+      header #header__carousel .carousel-item #hotel-mapping {
+        object-position: bottom; }
       header #header__carousel .carousel-item .carousel-caption {
         top: 70%;
         transform: translateY(-30%);
