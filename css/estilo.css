@@ -408,7 +408,7 @@ body {
   padding: 0; }
 
 .section2__fotos--eventos .fotos__grid--eventos .thumbnail {
-  min-height: 600px; }
+  min-height: 400px; }
   .section2__fotos--eventos .fotos__grid--eventos .thumbnail img {
     object-position: top left;
     width: 100%; }
