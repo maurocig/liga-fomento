@@ -21,7 +21,8 @@ header {
     z-index: 0;
     overflow-y: visible; }
     header #header__carousel .carousel-item {
-      height: 100%; }
+      height: 100%;
+      overflow-y: hidden; }
       header #header__carousel .carousel-item img {
         object-fit: cover;
         height: 100%;
