@@ -543,7 +543,7 @@ body {
     width: 150px;
     height: 37px;
     border: none;
-    box-shadow: 0px 1px 3px 1px #46464657;
+    box-shadow: 1px 1px 3px 1px #46464657;
     margin: 8px 3px 8px 3px;
     font-family: "Roboto";
     border-radius: 2px;
@@ -600,7 +600,7 @@ body {
     body .wrapper .section2__foto,
     body .wrapper .section3__foto {
       display: flex;
-      box-shadow: 0px 2px 5px 2px #46464657;
+      box-shadow: 1px 1px 3px 1px #46464657;
       overflow: hidden;
       margin: 6px;
       border-radius: 3px; }
@@ -629,7 +629,7 @@ body {
       height: 50vw;
       min-height: 350px;
       max-height: 80vh;
-      box-shadow: 0px 1px 3px 1px #46464657; }
+      box-shadow: 1px 1px 3px 1px #46464657; }
       body #galeria #galeria__carousel .carousel-inner {
         border-radius: 3px;
         overflow: hidden;

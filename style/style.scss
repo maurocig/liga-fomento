@@ -25,7 +25,7 @@ $colores: (
 
 $color-primario: #00784c;
 $color-secundario: rgb(109, 109, 109);
-$sombra: 0px 1px 3px 1px #46464657;
+$sombra: 1px 1px 3px 1px #46464657;
 $sombra2: 2px 2px 3px 5px #46464657;
 $verdeHover: #009c63;
 $grisHover: rgb(146, 146, 146);
@@ -163,7 +163,7 @@ body {
 		.section2__foto,
 		.section3__foto {
 			display: flex;
-			box-shadow: 0px 2px 5px 2px #46464657;
+			box-shadow: $sombra;
 			overflow: hidden;
 			margin: 6px;
 			border-radius: 3px;
