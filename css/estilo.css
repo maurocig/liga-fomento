@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Gelasio:wght@500;600&family=Hanuman:wght@400;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Hanuman:wght@400;700&family=Open+Sans:wght@400;500;700&family=Roboto+Slab:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
 header {
   /* background-color: seagreen; */
@@ -376,8 +376,8 @@ body {
           margin: 0;
           display: none; }
           body .section2__fotos--obras .fotos__grid--obras .thumbnail .thumbnail__caption p, body .section2__fotos--eventos .fotos__grid--obras .thumbnail .thumbnail__caption p, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos .thumbnail .thumbnail__caption p, body .section2__fotos--eventos .fotos__grid--eventos .thumbnail .thumbnail__caption p {
-            font-size: 22px;
-            font-family: "Roboto";
+            font-size: 24px;
+            font-family: "Roboto Slab", serif;
             color: #003f27;
             text-shadow: 2px 2px 2px #1d1d1d50; }
       body .section2__fotos--obras .fotos__grid--obras :hover .thumbnail__caption, body .section2__fotos--eventos .fotos__grid--obras :hover .thumbnail__caption, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos :hover .thumbnail__caption, body .section2__fotos--eventos .fotos__grid--eventos :hover .thumbnail__caption {
@@ -536,7 +536,7 @@ body {
     font-size: clamp(16px, 1.4vw, 21px);
     color: #323232; }
   body h2 {
-    font-family: 'Hanuman', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: clamp(26px, 3.5vw, 32px);
     color: black;
     font-weight: 700;
