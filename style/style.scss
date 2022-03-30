@@ -61,14 +61,18 @@ body {
 	}
 
 	h2 {
-		font-family: $roboto;
+		// font-family: $roboto;
+		font-family: 'Hanuman', serif;
 		font-size: clamp(26px, 3.5vw, 32px);
 		color: black;
 		font-weight: 700;
+		overflow: visible;
+		margin-bottom: 0;
 	}
 
 	h3 {
-		font-family: $roboto;
+		// font-family: $roboto;
+		// font-family: 'Hanuman', serif;
 		font-size: clamp(20px, 1.8vw, 26px);
 		padding-bottom: 7px;
 		font-weight: 500;

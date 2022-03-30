@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Gelasio:wght@500;600&family=Hanuman:wght@400;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
 header {
   /* background-color: seagreen; */
@@ -45,6 +45,7 @@ header {
           text-shadow: 3px 2px 2px #1d1d1d7e;
           overflow-y: visible; }
         header #header__carousel .carousel-item .carousel-caption h5 {
+          font-family: "Hanuman", serif;
           font-size: 33px;
           text-shadow: 3px 2px 2px #1d1d1d7e;
           overflow-y: hidden; }
@@ -52,7 +53,7 @@ header {
     header #header__carousel .carousel-control-next {
       width: 9%; }
   header .header__nav {
-    overflow-y: hidden;
+    overflow: visible;
     padding: 20px 0 0px 0;
     width: 100vw;
     display: flex;
@@ -63,12 +64,13 @@ header {
     position: fixed;
     background-image: linear-gradient(rgba(243, 242, 242, 0.938) 0%, rgba(255, 255, 255, 0) 100%); }
     header .header__nav .nav-inner {
+      overflow: visible;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-right: 7px; }
     header .header__nav .header__nav--ul {
-      overflow-y: hidden;
+      overflow: visible;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -80,6 +82,7 @@ header {
       padding: 0;
       margin: 0 10vw 0 10vw; }
       header .header__nav .header__nav--ul li {
+        overflow-y: visible;
         display: flex;
         align-items: left;
         word-wrap: unset;
@@ -90,12 +93,15 @@ header {
           color: white;
           background-color: #535353; }
         header .header__nav .header__nav--ul li a {
+          overflow-y: visible;
+          font-family: 'Hanuman', serif;
           text-decoration: none;
           font-weight: 500;
           display: flex;
           align-items: center;
           font-size: clamp(16px, 1.5vw, 18px);
           padding: 10px max(2.1vw, 20px) 10px max(2.1vw, 20px);
+          padding-top: 12px;
           color: #353535; }
           header .header__nav .header__nav--ul li a :hover {
             color: white; }
@@ -530,12 +536,13 @@ body {
     font-size: clamp(16px, 1.4vw, 21px);
     color: #323232; }
   body h2 {
-    font-family: "Roboto";
+    font-family: 'Hanuman', serif;
     font-size: clamp(26px, 3.5vw, 32px);
     color: black;
-    font-weight: 700; }
+    font-weight: 700;
+    overflow: visible;
+    margin-bottom: 0; }
   body h3 {
-    font-family: "Roboto";
     font-size: clamp(20px, 1.8vw, 26px);
     padding-bottom: 7px;
     font-weight: 500; }
