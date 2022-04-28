@@ -1,12 +1,12 @@
 @import "fonts", "header", "header2", "fuentes", "footer", "obras", "eventos", "biblioteca", "contacto", "gracias";
 
-$colores: (
-	verde: #00784c,
+$colores: (verde: #00784c,
 	gris: rgb(109, 109, 109),
 	verde-claro: #7eb650,
 );
 
-@each $color, $hex in $colores {
+@each $color,
+$hex in $colores {
 	.btn--#{$color} {
 		background-color: $hex;
 		color: white;
@@ -54,6 +54,7 @@ body {
 	margin: 0;
 	/* justify-items: center; */
 	color: rgb(124, 124, 124);
+
 	/* overflow-x: hidden; */
 	p {
 		font-size: clamp(16px, 1.4vw, 21px);
@@ -88,28 +89,35 @@ body {
 		border-radius: 2px;
 		color: white;
 	}
+
 	.boton:active {
 		@include color-botones(black, white);
 		// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
 	}
+
 	.boton--primario {
 		@extend .boton;
 		background-color: $color-primario;
 	}
+
 	.boton--primario:hover {
 		background-color: $verdeHover;
 	}
+
 	.boton--primario:active {
 		@include color-botones(black, white);
 		// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
 	}
+
 	.boton--secundario {
 		@extend .boton;
 		background-color: $color-secundario;
 	}
+
 	.boton--secundario:hover {
 		background-color: $grisHover;
 	}
+
 	.boton--secundario:active {
 		@include color-botones(black, white);
 		// no entiendo por qué no funciona la pseudo clase active, la idea es que cambie de color cuando se hace click...
@@ -120,7 +128,7 @@ body {
 		display: grid;
 		gap: 40px;
 		grid-template-areas:
-		/* "header" */
+			/* "header" */
 			"texto1"
 			"foto1"
 			"texto2"
@@ -131,38 +139,53 @@ body {
 		.section1__texto {
 			grid-area: texto1;
 		}
+
 		.section1__foto {
 			grid-area: foto1;
 		}
+
 		.section2__texto {
 			grid-area: texto2;
 		}
+
 		.section2__foto {
 			grid-area: foto2;
 		}
+
 		.section3__texto {
 			grid-area: texto3;
 		}
+
 		.section3__foto {
 			grid-area: foto3;
 		}
+
 		.section__banner {
 			grid-area: banner;
 		}
+
 		.section1__texto,
-		.section2__texto {
+		.section2__texto,
+		.section3__texto {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: start;
+
 			p {
 				margin: 0;
 			}
+
+			h2 {
+				padding-bottom: 20px;
+			}
 		}
+
 		.btn {
 			width: 120px;
 			height: 40px;
 		}
+
 		.section1__foto,
 		.section2__foto,
 		.section3__foto {
@@ -171,6 +194,12 @@ body {
 			overflow: hidden;
 			margin: 6px;
 			border-radius: 3px;
+			min-height: 300px;
+
+			img {
+				object-fit: cover;
+			}
+
 			.foto__img--fachada,
 			.foto__img--historia,
 			.foto__img--bibFachada {
@@ -180,6 +209,7 @@ body {
 			}
 		}
 	}
+
 	#galeria {
 		margin: 0px 10vw 0px 10vw;
 		margin-bottom: 120px;
@@ -187,6 +217,7 @@ body {
 		// overflow-y: hidden;
 		overflow-x: visible;
 		max-width: 1500px;
+
 		#galeria__carousel {
 			border-radius: 3px;
 			overflow-x: visible;
@@ -194,13 +225,16 @@ body {
 			min-height: 350px;
 			max-height: 80vh;
 			box-shadow: $sombra;
+
 			.carousel-inner {
 				border-radius: 3px;
 				overflow: hidden;
 				height: 100%;
+
 				.carousel-item {
 					overflow: hidden;
 					height: 100%;
+
 					img {
 						object-position: center;
 						overflow: hidden;
@@ -211,6 +245,7 @@ body {
 			}
 		}
 	}
+
 	.section__banner {
 		width: 100vw;
 		padding-bottom: 80px;
@@ -218,6 +253,7 @@ body {
 		text-align: center;
 		background-color: rgb(225, 225, 225);
 		box-shadow: inset 1px 1px 10px 1px #4646462c;
+
 		.section__banner--logos {
 			margin: 0 auto;
 			display: flex;
@@ -226,6 +262,7 @@ body {
 			height: 100px;
 			display: flex;
 			align-items: center;
+
 			div {
 				img {
 					width: 90px;
@@ -248,6 +285,7 @@ body {
 				"texto2 foto2"
 				"foto3 texto3";
 		}
+
 		.section__banner {
 			width: 100%;
 		}

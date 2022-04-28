@@ -379,12 +379,14 @@ body {
             font-size: 24px;
             font-family: "Roboto Slab", serif;
             color: #003f27;
-            text-shadow: 2px 2px 2px #1d1d1d50; }
+            text-shadow: 2px 2px 2px #1d1d1d50;
+            overflow: visible; }
       body .section2__fotos--obras .fotos__grid--obras :hover .thumbnail__caption, body .section2__fotos--eventos .fotos__grid--obras :hover .thumbnail__caption, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos :hover .thumbnail__caption, body .section2__fotos--eventos .fotos__grid--eventos :hover .thumbnail__caption {
-        display: flex; }
+        display: flex;
+        transition: 500ms; }
       body .section2__fotos--obras .fotos__grid--obras :hover img, body .section2__fotos--eventos .fotos__grid--obras :hover img, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos :hover img, body .section2__fotos--eventos .fotos__grid--eventos :hover img {
         opacity: 50%;
-        scale: 1.2; }
+        transition: 300ms; }
   @media (min-width: 800px) {
     body .section1__texto {
       margin-bottom: 0;
@@ -417,6 +419,13 @@ body {
 * {
   margin: 0;
   padding: 0; }
+
+.eventos__texto {
+  padding: 60px 10vw 0px 10vw;
+  width: 100%; }
+
+.wrapper__eventos {
+  margin-top: 20px !important; }
 
 .section2__fotos--eventos .fotos__grid--eventos .thumbnail {
   min-height: 400px; }
@@ -572,54 +581,79 @@ body {
   body .boton--secundario:active {
     color: black;
     background-color: white; }
-  body .wrapper {
+  body .wrapper, body .wrapper__eventos {
     margin: 60px 10vw 60px 10vw;
     display: grid;
     gap: 40px;
     grid-template-areas: "texto1" "foto1" "texto2" "foto2" "texto3" "foto3"; }
-    body .wrapper .section1__texto {
+    body .wrapper .section1__texto, body .wrapper__eventos .section1__texto {
       grid-area: texto1; }
-    body .wrapper .section1__foto {
+    body .wrapper .section1__foto, body .wrapper__eventos .section1__foto {
       grid-area: foto1; }
-    body .wrapper .section2__texto, body .wrapper .section2__biblioteca {
+    body .wrapper .section2__texto, body .wrapper__eventos .section2__texto, body .wrapper .section2__biblioteca, body .wrapper__eventos .section2__biblioteca {
       grid-area: texto2; }
-    body .wrapper .section2__foto {
+    body .wrapper .section2__foto, body .wrapper__eventos .section2__foto {
       grid-area: foto2; }
-    body .wrapper .section3__texto {
+    body .wrapper .section3__texto, body .wrapper__eventos .section3__texto {
       grid-area: texto3; }
-    body .wrapper .section3__foto {
+    body .wrapper .section3__foto, body .wrapper__eventos .section3__foto {
       grid-area: foto3; }
-    body .wrapper .section__banner {
+    body .wrapper .section__banner, body .wrapper__eventos .section__banner {
       grid-area: banner; }
-    body .wrapper .section1__texto, body .wrapper .section2__texto, body .wrapper .section2__biblioteca {
+    body .wrapper .section1__texto, body .wrapper__eventos .section1__texto, body .wrapper .section2__texto, body .wrapper__eventos .section2__texto, body .wrapper .section2__biblioteca, body .wrapper__eventos .section2__biblioteca, body .wrapper .section3__texto, body .wrapper__eventos .section3__texto {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: start; }
-      body .wrapper .section1__texto p,
+      body .wrapper .section1__texto p, body .wrapper__eventos .section1__texto p,
       body .wrapper .section2__texto p,
-      body .wrapper .section2__biblioteca p {
+      body .wrapper__eventos .section2__texto p,
+      body .wrapper .section2__biblioteca p,
+      body .wrapper__eventos .section2__biblioteca p,
+      body .wrapper .section3__texto p,
+      body .wrapper__eventos .section3__texto p {
         margin: 0; }
-    body .wrapper .btn {
+      body .wrapper .section1__texto h2, body .wrapper__eventos .section1__texto h2,
+      body .wrapper .section2__texto h2,
+      body .wrapper__eventos .section2__texto h2,
+      body .wrapper .section2__biblioteca h2,
+      body .wrapper__eventos .section2__biblioteca h2,
+      body .wrapper .section3__texto h2,
+      body .wrapper__eventos .section3__texto h2 {
+        padding-bottom: 20px; }
+    body .wrapper .btn, body .wrapper__eventos .btn {
       width: 120px;
       height: 40px; }
-    body .wrapper .section1__foto,
-    body .wrapper .section2__foto,
-    body .wrapper .section3__foto {
+    body .wrapper .section1__foto, body .wrapper__eventos .section1__foto, body .wrapper .section2__foto, body .wrapper__eventos .section2__foto, body .wrapper .section3__foto, body .wrapper__eventos .section3__foto {
       display: flex;
       box-shadow: 1px 1px 3px 1px #46464657;
       overflow: hidden;
       margin: 6px;
-      border-radius: 3px; }
-      body .wrapper .section1__foto .foto__img--fachada,
+      border-radius: 3px;
+      min-height: 300px; }
+      body .wrapper .section1__foto img, body .wrapper__eventos .section1__foto img,
+      body .wrapper .section2__foto img,
+      body .wrapper__eventos .section2__foto img,
+      body .wrapper .section3__foto img,
+      body .wrapper__eventos .section3__foto img {
+        object-fit: cover; }
+      body .wrapper .section1__foto .foto__img--fachada, body .wrapper__eventos .section1__foto .foto__img--fachada,
       body .wrapper .section1__foto .foto__img--historia,
+      body .wrapper__eventos .section1__foto .foto__img--historia,
       body .wrapper .section1__foto .foto__img--bibFachada,
+      body .wrapper__eventos .section1__foto .foto__img--bibFachada,
       body .wrapper .section2__foto .foto__img--fachada,
+      body .wrapper__eventos .section2__foto .foto__img--fachada,
       body .wrapper .section2__foto .foto__img--historia,
+      body .wrapper__eventos .section2__foto .foto__img--historia,
       body .wrapper .section2__foto .foto__img--bibFachada,
+      body .wrapper__eventos .section2__foto .foto__img--bibFachada,
       body .wrapper .section3__foto .foto__img--fachada,
+      body .wrapper__eventos .section3__foto .foto__img--fachada,
       body .wrapper .section3__foto .foto__img--historia,
-      body .wrapper .section3__foto .foto__img--bibFachada {
+      body .wrapper__eventos .section3__foto .foto__img--historia,
+      body .wrapper .section3__foto .foto__img--bibFachada,
+      body .wrapper__eventos .section3__foto .foto__img--bibFachada {
         width: 100%;
         height: 100%;
         object-fit: cover; }
@@ -668,7 +702,7 @@ body {
       body .section__banner .section__banner--logos div img {
         width: 90px; }
   @media (min-width: 830px) {
-    body .wrapper {
+    body .wrapper, body .wrapper__eventos {
       margin: 0 10vw 0 10vw;
       margin-top: 80px;
       margin-bottom: 80px;
@@ -680,6 +714,6 @@ body {
     body .section__banner {
       width: 100%; } }
   @media (min-width: 1000px) {
-    body .wrapper {
+    body .wrapper, body .wrapper__eventos {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: "foto1  texto1 texto1" "texto2 texto2 foto2" "foto3  texto3 texto3"; } }
