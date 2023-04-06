@@ -156,6 +156,7 @@ header .nav-colored {
   box-shadow: 2px 1px 5px 2px rgba(48, 48, 48, 0.4784313725);
 }
 header .nav-colored #circulo {
+  display: none;
   width: 50px;
   height: 50px;
 }
@@ -450,7 +451,6 @@ body .section2__fotos--obras .fotos__grid--obras, .section2__fotos--eventos body
   overflow: visible;
 }
 body .section2__fotos--obras .fotos__grid--obras .thumbnail, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos .thumbnail, body .section2__fotos--eventos .fotos__grid--obras .thumbnail, body .section2__fotos--eventos .fotos__grid--eventos .thumbnail {
-  height: 400px;
   width: 100%;
   overflow-y: hidden;
   position: relative;
@@ -459,6 +459,7 @@ body .section2__fotos--obras .fotos__grid--obras .thumbnail, .section2__fotos--e
   box-shadow: 0px 1px 3px 1px rgba(70, 70, 70, 0.3411764706);
   margin: 5px;
   overflow-x: visible;
+  aspect-ratio: 1.6;
 }
 body .section2__fotos--obras .fotos__grid--obras .thumbnail img, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos .thumbnail img, body .section2__fotos--eventos .fotos__grid--obras .thumbnail img, body .section2__fotos--eventos .fotos__grid--eventos .thumbnail img {
   -o-object-fit: cover;
@@ -482,8 +483,8 @@ body .section2__fotos--obras .fotos__grid--obras .thumbnail .thumbnail__caption,
   display: none;
 }
 body .section2__fotos--obras .fotos__grid--obras .thumbnail .thumbnail__caption p, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos .thumbnail .thumbnail__caption p, body .section2__fotos--eventos .fotos__grid--obras .thumbnail .thumbnail__caption p, body .section2__fotos--eventos .fotos__grid--eventos .thumbnail .thumbnail__caption p {
-  font-size: 24px;
-  font-family: "Roboto Slab", serif;
+  font-size: 27 !important;
+  font-family: "Open Sans", serif;
   color: #003f27;
   text-shadow: 2px 2px 2px rgba(29, 29, 29, 0.3137254902);
   overflow: visible;
@@ -496,7 +497,7 @@ body .section2__fotos--obras .fotos__grid--obras :hover img, .section2__fotos--e
   opacity: 50%;
   transition: 300ms;
 }
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
   body .section1__texto {
     margin-bottom: 0;
     justify-content: center;
@@ -509,12 +510,11 @@ body .section2__fotos--obras .fotos__grid--obras :hover img, .section2__fotos--e
   body .section2__fotos--obras .fotos__grid--obras, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos, body .section2__fotos--eventos .fotos__grid--obras, body .section2__fotos--eventos .fotos__grid--eventos {
     overflow-x: visible;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.7fr 0.7fr 0.7fr;
+    grid-template-rows: 1.7fr 1.7fr 1.7fr;
   }
   body .section2__fotos--obras .fotos__grid--obras .thumbnail, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos .thumbnail, body .section2__fotos--eventos .fotos__grid--obras .thumbnail, body .section2__fotos--eventos .fotos__grid--eventos .thumbnail {
     overflow-x: visible;
-    height: 20vw;
-    min-height: 250px;
+    aspect-ratio: 1.2 !important;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
@@ -524,15 +524,14 @@ body .section2__fotos--obras .fotos__grid--obras :hover img, .section2__fotos--e
        object-fit: cover;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1600px) {
   body .section2__fotos--obras .fotos__grid--obras, .section2__fotos--eventos body .section2__fotos--obras .fotos__grid--eventos, body .section2__fotos--eventos .fotos__grid--obras, body .section2__fotos--eventos .fotos__grid--eventos {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 0.7fr 0.7fr;
   }
 }
 @media (min-width: 1600px) {
   body .thumbnail {
-    height: 300px;
+    aspect-ratio: 1.2;
   }
 }
 
@@ -550,16 +549,13 @@ body .section2__fotos--obras .fotos__grid--obras :hover img, .section2__fotos--e
   margin-top: 20px !important;
 }
 
-.section2__fotos--eventos .fotos__grid--eventos .thumbnail {
-  min-height: 400px;
-}
 .section2__fotos--eventos .fotos__grid--eventos .thumbnail img {
   -o-object-position: top left;
      object-position: top left;
   width: 100%;
 }
 .section2__fotos--eventos .fotos__grid--eventos .thumbnail:hover img {
-  opacity: 30%;
+  opacity: 50% !important;
 }
 
 .section2__biblioteca {
