@@ -260,6 +260,13 @@ header .nav-colored .header__nav--ul li a {
     font-size: clamp(16px, 1.5vw, 18px);
   }
 }
+@media (min-width: 1900px) {
+  .carousel-caption {
+    max-width: 1500px;
+    margin: auto !important;
+    align-self: center !important;
+  }
+}
 .header2 {
   height: 400px;
   z-index: 9999;
