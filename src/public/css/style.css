@@ -644,6 +644,13 @@ body .section2__fotos--obras .fotos__grid--obras :hover img, .section2__fotos--e
     grid-template-areas: "form mapa info";
   }
 }
+@media (min-width: 1900px) {
+  .wrapper__contacto {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1500px;
+  }
+}
 .wrapper__gracias {
   margin: 60px 10vw 60px 10vw;
   width: 80vw;
@@ -668,7 +675,7 @@ body .section2__fotos--obras .fotos__grid--obras :hover img, .section2__fotos--e
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 html {
@@ -692,13 +699,17 @@ body p {
   font-size: 16px;
   color: rgb(50, 50, 50);
 }
-body h2 {
+body h2, body h1 {
   font-family: "Roboto Slab", serif;
   font-size: 1.3rem;
   color: black;
   font-weight: 700;
   overflow: visible;
   margin-bottom: 0;
+}
+body h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 body h3 {
   font-size: 1.2rem;
