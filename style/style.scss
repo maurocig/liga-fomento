@@ -30,6 +30,11 @@ $sombra2: 2px 2px 3px 5px #46464657;
 $verdeHover: #009c63;
 $grisHover: rgb(146, 146, 146);
 
+html,body{
+	-webkit-overflow-scrolling : touch !important;
+	overflow: auto !important;
+}
+
 * {
 	margin: 0;
 	padding: 0;

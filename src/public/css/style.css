@@ -678,6 +678,11 @@ body .section2__fotos--obras .fotos__grid--obras :hover img, .section2__fotos--e
   color: white;
 }
 
+html, body {
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
+}
+
 * {
   margin: 0;
   padding: 0;
