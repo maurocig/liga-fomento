@@ -1,62 +1,49 @@
-.carousel-item {
-}
-.carousel-caption {
-}
-.carousel-caption {
-}
+.carousel-item {}
+
+.carousel-caption {}
+
+.carousel-caption {}
+
 .carousel-control-prev,
-.carousel-control-next {
-}
+.carousel-control-next {}
 
 .header__carousel {
 	/* position: absolute; */
 }
 
-.header__nav {
-}
+.header__nav {}
 
-.header__nav--ul {
-}
+.header__nav--ul {}
 
-.header__nav--ul li {
-}
+.header__nav--ul li {}
 
-.header__nav--ul li a {
-}
+.header__nav--ul li a {}
 
-.header__nav--ul li:hover {
-}
+.header__nav--ul li:hover {}
 
-.header__nav--ul li a:hover {
-}
+.header__nav--ul li a:hover {}
 
-.activo {
-}
+.activo {}
 
-.nav__logo--img {
-}
+.nav__logo--img {}
 
-.nav__logo {
-}
+.nav__logo {}
 
-.circle {
-}
+.circle {}
 
-.nav-colored {
-}
+.nav-colored {}
 
 /* hasta acá llegué */
 .nav-colored .circle,
-.header__nav--ul {
-}
+.header__nav--ul {}
+
 .nav-colored .circle,
 .nav-colored .nav__logo,
 .nav-colored .nav__logo--img {
 	/* height: 70px; */
 }
 
-.nav-colored .header__nav--ul {
-}
+.nav-colored .header__nav--ul {}
 
 .nav-colored .header__nav--ul,
 .nav-colored .header__nav--ul li a {
@@ -73,45 +60,36 @@
 
 /* /////// MAIN /////// */
 
-p {
-}
+p {}
 
-h2 {
-}
+h2 {}
 
-h3 {
-}
+h3 {}
 
 /* //// GRID //// */
 .main-head {
 	grid-area: header;
 }
 
-.wrapper {
-}
+.wrapper {}
 
 .section1__texto,
-.section2__texto {
-}
+.section2__texto {}
 
 .btn {
 	/* margin-top: 20px; */
 }
 
-.section1__foto {
-}
+.section1__foto {}
 
-.section2__foto {
-}
+.section2__foto {}
 
 .section1__foto,
-.section2__foto {
-}
+.section2__foto {}
 
 .foto__img--fachada,
 .foto__img--historia,
-.foto__img--bibFachada {
-}
+.foto__img--bibFachada {}
 
 .section1__texto,
 .section1__foto,
@@ -125,80 +103,76 @@ h3 {
 	/* border: 4px solid red; */
 }
 
-.section__banner {
-}
+.section__banner {}
 
-.section__banner--logos {
-}
+.section__banner--logos {}
 
-.section__banner--logos div img {
-}
+.section__banner--logos div img {}
 
 /* ///////// FOOTER ///////// */
-footer {
-}
-.footer__grid {
-}
-.footer__grid > * {
+footer {}
+
+.footer__grid {}
+
+.footer__grid>* {
 	/* min-width: 400px; */
 }
 
-.footer1 {
-}
-.footer2 {
-}
-.footer3 {
-}
-.footer1 form {
-}
-.footer1 form > * {
-}
+.footer1 {}
 
-.footer__img--logo {
-}
-.contact_icon {
-}
+.footer2 {}
+
+.footer3 {}
+
+.footer1 form {}
+
+.footer1 form>* {}
+
+.footer__img--logo {}
+
+.contact_icon {}
 
 .footer__column {
 	/* width: 23vw; */
 }
-.footer__column ul {
-}
+
+.footer__column ul {}
+
 .footer__column div {
 	/* margin-top: 7px; */
 	/* display: flex; */
 	/* align-items: center; */
 }
-.footer__column p {
-}
-.footer__column--sitemap li a {
-}
 
-@media (min-width: 500px) {
-}
+.footer__column p {}
+
+.footer__column--sitemap li a {}
+
+@media (min-width: 500px) {}
 
 @media (min-width: 830px) {
-	.wrapper {
-	}
-	.section__banner {
-	}
+	.wrapper {}
 
-	footer {
-	}
-	.footer__grid {
-	}
-	.footer__grid > * {
+	.section__banner {}
+
+	footer {}
+
+	.footer__grid {}
+
+	.footer__grid>* {
 		/* max-width: 250px; */
 	}
-	.footer1 {
-	}
-	.footer2 {
-	}
-	.footer3 {
-	}
+
+	.footer1 {}
+
+	.footer2 {}
+
+	.footer3 {}
+
 	.footer--logo {
 		/* display: flex; */
 	}
+
 	.footer__img--logo {
 		align-self: end;
 	}
@@ -206,21 +180,26 @@ footer {
 	.header__nav {
 		/* padding-left: 30vw; */
 		/* padding-right: 30vw; */
+		/* padding-top: 0rem; */
 	}
-	.circle {
-	}
+
+	.circle {}
+
 	.nav-colored {
 		/* padding: 5px 30vw 5px 30vw; */
+
 	}
-	.nav-colored .circle {
-	}
-	.header__nav--ul {
-	}
+
+	.nav-colored .circle {}
+
+	.header__nav--ul {}
+
 	.nav-colored .circle,
 	.nav-colored .nav__logo,
 	.nav-colored .nav__logo--img {
 		/* height: 70px; */
 	}
+
 	.nav-colored .header__nav--ul,
 	.nav-colored .header__nav--ul li a {
 		/* padding: 5px 10px 5px 10px; */
@@ -228,26 +207,29 @@ footer {
 }
 
 /* //// CONTACTO //// */
-.header2 {
-}
+.header2 {}
 
 .section2__texto--contacto div img {
 	color: black;
 	/* filter: invert(99%) sepia(93%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(00%); */
 }
+
 .section__form {
 	grid-area: form;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 }
+
 .section__form * {
 	display: block;
 }
+
 .mapouter {
 	grid-area: map;
 	align-self: start;
 }
+
 .wrapper__contacto {
 	/* display: grid; */
 	/* grid-template-columns: 1fr; */
@@ -281,17 +263,21 @@ footer {
 	width: 100%;
 	object-fit: cover;
 }
+
 .figure__img {
 	object-fit: contain;
 	height: 100%;
 	padding: 0;
 }
+
 .img-fluid {
 	padding: 0;
 }
+
 .container {
 	margin: 0;
 }
+
 .margin {
 	margin: 0 10vw 50px 10vw;
 }
